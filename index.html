@@ -1,0 +1,1278 @@
+<!doctype html>
+<html lang="en" dir="ltr" class=""><head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Maryam Zahid: websites, portfolios, CVs, presentations and creative content, backed by real business operations experience. Riyadh.">
+<title>Maryam Zahid | Websites, CVs, presentations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&amp;family=Aref+Ruqaa:wght@400;700&amp;family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&amp;family=Caveat:wght@500;600&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F2F8; --surface:#FFFFFF; --surface2:#ECE9F4; --ink:#1D1A33; --muted:#5A5571; --line:#DCD8E7;
+  --accent:#4A45D4; --accentSoft:#E2E0FA; --onAccent:#FFFFFF;
+  --blush:#F7D3DE; --mint:#CDEBDF; --butter:#F6E7A9; --lilac:#DCD6FB; --noteInk:#1D1A33; --wa:#1F9D55;
+  --sans:"Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Instrument Serif", Georgia, serif;
+  --hand:"Caveat", "Segoe Print", cursive;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --r:22px;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12111C; --surface:#1C1A2A; --surface2:#242238; --ink:#EEEBF8; --muted:#ABA6C3; --line:#2F2C45;
+    --accent:#A3A0FF; --accentSoft:#2A2750; --onAccent:#14122A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12111C; --surface:#1C1A2A; --surface2:#242238; --ink:#EEEBF8; --muted:#ABA6C3; --line:#2F2C45;
+  --accent:#A3A0FF; --accentSoft:#2A2750; --onAccent:#14122A; color-scheme:dark;
+}
+html[lang="ar"]{
+  --sans:"IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --serif:"Amiri", "Traditional Arabic", serif;
+  --hand:"Aref Ruqaa", "Amiri", serif;
+}
+html{scroll-behavior:smooth; scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:40; background:var(--bg)}
+a{color:inherit}
+button,input,select,textarea{font:inherit; color:inherit}
+:focus-visible{outline:2.5px solid var(--accent); outline-offset:3px; border-radius:6px}
+.wrap{width:min(1180px, 100% - 48px); margin-inline:auto}
+section{padding:clamp(80px,11vw,140px) 0; position:relative}
+h2{font-size:clamp(40px,6vw,76px); line-height:1; letter-spacing:-.035em; font-weight:700; margin:0}
+h2 .soft{font-family:var(--serif); font-style:italic; font-weight:400; letter-spacing:-.01em; color:var(--accent)}
+html[lang="ar"] h2{letter-spacing:0; line-height:1.3}
+html[lang="ar"] h2 .soft{font-style:normal}
+.sec-num{display:inline-flex; align-items:center; gap:10px; font-size:15px; font-weight:600; color:var(--muted); margin-bottom:22px}
+.sec-num i{width:10px; height:10px; border-radius:50%; background:var(--accent); display:inline-block}
+.lead{font-size:19px; color:var(--muted); max-width:58ch; margin:0}
+.chip{display:inline-flex; align-items:center; gap:6px; padding:7px 14px; border-radius:999px; font-size:14px; font-weight:500; background:var(--surface); border:1px solid var(--line); color:var(--ink); line-height:1.3}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.tag{font-size:12.5px; font-weight:600; padding:4px 10px; border-radius:999px; background:var(--accentSoft); color:var(--accent); white-space:nowrap}
+.tag.concept{background:var(--butter); color:var(--noteInk)}
+.tag.pilot{background:var(--mint); color:var(--noteInk)}
+.tag.paused{background:var(--blush); color:var(--noteInk)}
+html[dir="rtl"] .flip{transform:scaleX(-1)}
+
+/* Header */
+.top{position:fixed; top:env(safe-area-inset-top,0px); left:0; right:0; z-index:30; transition:background .3s, box-shadow .3s}
+.top.solid{background:color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); box-shadow:0 1px 0 var(--line)}
+.top .bar{height:72px; display:flex; align-items:center; justify-content:space-between; gap:16px}
+.logo{display:flex; align-items:center; gap:10px; text-decoration:none; font-weight:700; font-size:18px; letter-spacing:-.02em; white-space:nowrap}
+.logo svg{width:30px; height:30px; flex:none}
+.nav{display:flex; gap:2px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:5px}
+.nav a{text-decoration:none; font-size:15px; font-weight:500; padding:8px 14px; border-radius:999px; color:var(--muted); transition:background .25s, color .25s; white-space:nowrap}
+.nav a:hover{color:var(--ink)}
+.nav a.on{background:var(--ink); color:var(--bg)}
+.tools-top{display:flex; gap:8px; align-items:center}
+.lang-btn{border:1.5px solid var(--line); background:var(--surface); border-radius:999px; padding:9px 16px; min-height:44px; font-weight:600; font-size:15px; cursor:pointer}
+.lang-btn:hover{border-color:var(--accent)}
+.hello{display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:600; font-size:15px; padding:11px 20px; min-height:44px; border-radius:999px; background:var(--accent); color:var(--onAccent); transition:transform .3s var(--ease); white-space:nowrap}
+.hello:hover{transform:translateY(-2px)}
+.menu-btn{display:none; width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:var(--surface); cursor:pointer}
+.menu-btn span{display:block; width:18px; height:1.6px; background:currentColor; margin:4px auto}
+@media (max-width:1020px){
+  .nav{position:fixed; top:calc(env(safe-area-inset-top,0px) + 76px); left:16px; right:16px; flex-direction:column; border-radius:20px; padding:10px; opacity:0; transform:translateY(-8px); pointer-events:none; transition:.3s var(--ease); box-shadow:0 20px 50px rgba(20,16,50,.15)}
+  .nav.open{opacity:1; transform:none; pointer-events:auto}
+  .nav a{font-size:18px; padding:12px 16px}
+  .menu-btn{display:block}
+  .hello{display:none}
+}
+
+/* Dot navigator */
+.dotnav{position:fixed; inset-inline-end:26px; top:50%; transform:translateY(-50%); z-index:25; display:flex; flex-direction:column; gap:20px; padding:6px 0}
+.dotnav::before{content:""; position:absolute; inset-inline-end:6px; top:12px; bottom:12px; width:1.5px; background:var(--line)}
+.dotnav .fill{position:absolute; inset-inline-end:6px; top:12px; width:1.5px; background:var(--accent); height:0; transition:height .3s}
+.dotnav a{position:relative; display:flex; align-items:center; justify-content:flex-end; gap:12px; text-decoration:none; min-height:14px}
+.dotnav a span{font-size:13px; font-weight:600; color:var(--ink); background:var(--surface); border:1px solid var(--line); padding:3px 10px; border-radius:999px; opacity:0; transition:.25s; pointer-events:none; white-space:nowrap}
+.dotnav a:hover span,.dotnav a:focus-visible span{opacity:1}
+.dotnav a i{width:13px; height:13px; border-radius:50%; background:var(--bg); border:1.5px solid var(--muted); position:relative; z-index:1; transition:.3s}
+.dotnav a.on i{background:var(--accent); border-color:var(--accent); transform:scale(1.25)}
+@media (max-width:1240px){ .dotnav{display:none} }
+
+/* WhatsApp float */
+.wa-float{position:fixed; z-index:35; inset-inline-end:20px; bottom:calc(20px + env(safe-area-inset-bottom,0px)); width:58px; height:58px; border-radius:50%; background:var(--wa); color:#fff; display:grid; place-items:center; box-shadow:0 12px 30px rgba(20,90,50,.35); transition:transform .3s var(--ease), opacity .3s; text-decoration:none}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:28px; height:28px}
+.wa-float.hide{opacity:0; pointer-events:none; transform:scale(.8)}
+
+/* Hero */
+.hero{min-height:100vh; min-height:100svh; display:flex; align-items:center; padding:120px 0 90px; overflow:hidden}
+#field{position:absolute; inset:0; width:100%; height:100%; display:block}
+.hero .wrap{position:relative; z-index:2; pointer-events:none}
+.hero .wrap > *{pointer-events:auto}
+.pills{display:flex; flex-wrap:wrap; gap:8px}
+.hello-line{display:inline-flex; align-items:center; gap:10px; padding:7px 14px 7px 8px; border-radius:999px; background:var(--surface); border:1px solid var(--line); font-size:15px; font-weight:500}
+html[dir="rtl"] .hello-line{padding:7px 8px 7px 14px}
+.hello-line .av{width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg, var(--lilac), var(--blush)); display:grid; place-items:center; font-weight:700; font-size:12px; color:var(--noteInk)}
+.avail{display:inline-flex; align-items:center; gap:9px; padding:7px 15px; border-radius:999px; background:var(--mint); color:var(--noteInk); font-size:15px; font-weight:600; text-decoration:none}
+.avail .live{width:8px; height:8px; border-radius:50%; background:#1F9D55; box-shadow:0 0 0 0 rgba(31,157,85,.5); animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 8px rgba(31,157,85,0)}100%{box-shadow:0 0 0 0 rgba(31,157,85,0)}}
+.hero h1{font-size:clamp(54px,9vw,128px); line-height:.93; letter-spacing:-.05em; font-weight:800; margin:28px 0 0; max-width:11ch}
+.hero h1 .l2{display:block; font-family:var(--serif); font-weight:400; font-style:italic; letter-spacing:-.02em; color:var(--accent); font-size:.62em; line-height:1.05; margin-top:.18em}
+html[lang="ar"] .hero h1{letter-spacing:0; line-height:1.2; font-weight:700; max-width:12ch}
+html[lang="ar"] .hero h1 .l2{font-style:normal; letter-spacing:0; line-height:1.4; font-weight:700}
+.hero h1 .w{display:inline-block; opacity:0; transform:translateY(.4em); transition:opacity .7s var(--ease), transform .9s var(--ease)}
+.loaded .hero h1 .w{opacity:1; transform:none}
+.hero .sub{font-size:clamp(18px,1.6vw,21px); color:var(--muted); max-width:54ch; margin:26px 0 0; min-height:3.2em; transition:opacity .35s}
+.hero .sub.swap{opacity:0}
+.why{margin-top:32px; padding:18px; background:color-mix(in srgb, var(--surface) 88%, transparent); border:1px solid var(--line); border-radius:var(--r); max-width:640px; backdrop-filter:blur(6px)}
+.why p{margin:0 0 12px; font-weight:600; font-size:15px}
+.why .opts{display:flex; flex-wrap:wrap; gap:8px}
+.why button{border:1.5px solid var(--line); background:var(--bg); padding:10px 16px; min-height:44px; border-radius:999px; font-weight:600; font-size:15px; cursor:pointer; transition:.25s var(--ease)}
+.why button:hover{border-color:var(--accent)}
+.why button[aria-checked="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.why button[data-aud="hire"]{border-color:var(--accent)}
+.hero .ctas{display:flex; flex-wrap:wrap; gap:12px; margin-top:26px}
+.btn{display:inline-flex; align-items:center; gap:10px; text-decoration:none; font-weight:600; padding:14px 24px; min-height:50px; border-radius:999px; transition:transform .3s var(--ease), background .25s, opacity .25s; border:0; cursor:pointer}
+.btn.primary{background:var(--accent); color:var(--onAccent)}
+.btn.ghost{background:transparent; border:1.5px solid var(--ink)}
+.btn.wa{background:var(--wa); color:#fff}
+.btn svg{width:18px; height:18px; flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn[disabled]{opacity:.4; pointer-events:none}
+.hint{position:absolute; bottom:26px; left:0; right:0; text-align:center; font-family:var(--hand); font-size:22px; color:var(--muted); z-index:2; pointer-events:none}
+.node{position:absolute; top:var(--t); inset-inline-end:var(--e); z-index:2; font-size:14px; font-weight:600; padding:8px 14px; border-radius:999px; background:var(--surface); border:1px solid var(--line); box-shadow:0 8px 24px rgba(30,25,70,.08); transition:transform .4s var(--ease), background .3s, color .3s}
+.node.hot{background:var(--ink); color:var(--bg); transform:scale(1.08)}
+@media (max-width:1200px){ .node{display:none} }
+@media (max-width:640px){ .hint{display:none} }
+
+/* About */
+.about-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(36px,6vw,90px); align-items:start; margin-top:44px}
+.about-grid .lead + .lead{margin-top:20px}
+.facts{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:8px 24px}
+.fact{display:flex; gap:16px; align-items:flex-start; padding:15px 0; border-bottom:1px dashed var(--line)}
+.fact:last-child{border:0}
+.fact b{display:block; font-size:16px}
+.fact span{color:var(--muted); font-size:15px}
+.fact i{width:12px; height:12px; border-radius:50%; flex:none; margin-top:7px}
+@media (max-width:860px){ .about-grid{grid-template-columns:1fr} }
+
+/* Services */
+.services{background:var(--surface2)}
+.svc-head{display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:end}
+.feat{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(24px,4vw,56px); align-items:center; margin-top:48px; padding:clamp(24px,4vw,44px); background:var(--ink); color:var(--bg); border-radius:32px; position:relative; overflow:hidden}
+.feat .badge{display:inline-flex; gap:8px; align-items:center; background:var(--lilac); color:var(--noteInk); font-weight:700; font-size:13.5px; padding:6px 13px; border-radius:999px}
+.feat h3{font-size:clamp(34px,4vw,54px); line-height:1; letter-spacing:-.035em; margin:18px 0 14px}
+html[lang="ar"] .feat h3{letter-spacing:0; line-height:1.3}
+.feat p{margin:0; color:color-mix(in srgb, var(--bg) 72%, var(--ink)); font-size:17.5px; max-width:46ch}
+.feat ul{list-style:none; padding:0; margin:22px 0 26px; display:grid; grid-template-columns:1fr 1fr; gap:10px 18px}
+.feat li{display:flex; gap:10px; font-size:15.5px}
+.feat li::before{content:"✓"; color:var(--lilac); font-weight:700}
+.feat .add{background:var(--lilac); color:var(--noteInk); border-color:var(--lilac)}
+.feat .add[aria-pressed="true"]{background:var(--mint); border-color:var(--mint)}
+.browser{background:var(--surface); color:var(--ink); border-radius:18px; overflow:hidden; box-shadow:0 30px 70px rgba(0,0,0,.35); transform:rotate(-2deg); transition:transform .6s var(--ease)}
+html[dir="rtl"] .browser{transform:rotate(2deg)}
+.feat:hover .browser{transform:rotate(0) translateY(-4px)}
+.browser .bar{display:flex; align-items:center; gap:7px; padding:12px 14px; background:var(--surface2); border-bottom:1px solid var(--line)}
+.browser .bar i{width:10px; height:10px; border-radius:50%; background:var(--line)}
+.browser .bar i:nth-child(1){background:#F28C8C} .browser .bar i:nth-child(2){background:#F2CF6B} .browser .bar i:nth-child(3){background:#7FD49B}
+.browser .url{flex:1; margin-inline-start:8px; background:var(--surface); border-radius:999px; padding:5px 12px; font-size:13.5px; color:var(--muted); direction:ltr; text-align:left}
+.browser .url b{color:var(--ink); font-weight:600}
+.browser .url .caret{display:inline-block; width:1.5px; height:1em; background:var(--accent); vertical-align:-2px; animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.browser .page{position:relative; padding:28px 24px 30px; min-height:250px; background-image:radial-gradient(var(--line) 1.3px, transparent 1.3px); background-size:20px 20px}
+.browser .page .mini-h{font-size:30px; font-weight:800; letter-spacing:-.04em; line-height:1}
+html[lang="ar"] .browser .page .mini-h{letter-spacing:0; line-height:1.3}
+.browser .page .mini-s{font-family:var(--serif); font-style:italic; color:var(--accent); font-size:22px; margin-top:6px}
+html[lang="ar"] .browser .page .mini-s{font-style:normal}
+.browser .blocks{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:22px}
+.browser .blocks span{height:64px; border-radius:12px; background:var(--c); animation:bob 4s ease-in-out infinite}
+.browser .blocks span:nth-child(2){animation-delay:.5s} .browser .blocks span:nth-child(3){animation-delay:1s}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.browser .line{height:9px; border-radius:9px; background:var(--line); margin-top:12px}
+.svc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px}
+.svc{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:26px 24px; display:flex; flex-direction:column; gap:12px; transition:transform .4s var(--ease), border-color .3s, box-shadow .4s}
+.svc:hover{transform:translateY(-4px); box-shadow:0 20px 44px rgba(30,25,70,.1)}
+.svc.sel{border-color:var(--accent); box-shadow:0 0 0 3px var(--accentSoft)}
+.svc .ic{width:48px; height:48px; border-radius:14px; background:var(--c); display:grid; place-items:center; color:var(--noteInk)}
+.svc .ic svg{width:24px; height:24px}
+.svc h3{font-size:22px; letter-spacing:-.02em; margin:4px 0 0; line-height:1.15}
+html[lang="ar"] .svc h3{letter-spacing:0; line-height:1.4}
+.svc p{margin:0; color:var(--muted); font-size:15.5px}
+.svc .chips .chip{font-size:13px; padding:4px 11px; background:var(--bg)}
+.add{margin-top:auto; align-self:flex-start; display:inline-flex; align-items:center; gap:8px; border:1.5px solid var(--ink); background:transparent; border-radius:999px; padding:9px 16px; min-height:44px; font-weight:600; font-size:14.5px; cursor:pointer; transition:.25s}
+.add:hover{background:var(--ink); color:var(--bg)}
+.add[aria-pressed="true"]{background:var(--accent); color:var(--onAccent); border-color:var(--accent)}
+.how{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:56px; counter-reset:h}
+.how div{position:relative; padding-top:20px; border-top:2px solid var(--ink)}
+.how div::before{counter-increment:h; content:counter(h); position:absolute; top:-15px; inset-inline-start:0; width:28px; height:28px; border-radius:50%; background:var(--accent); color:var(--onAccent); display:grid; place-items:center; font-size:13px; font-weight:700}
+.how b{display:block; font-size:18px; margin-top:6px}
+.how span{color:var(--muted); font-size:15px}
+.builder{margin-top:56px; display:grid; grid-template-columns:1.1fr .9fr; gap:0; background:var(--surface); border:1px solid var(--line); border-radius:28px; overflow:hidden}
+.builder .form{padding:clamp(22px,4vw,40px)}
+.builder h3{font-size:clamp(28px,3vw,38px); letter-spacing:-.03em; margin:0 0 6px; line-height:1.1}
+html[lang="ar"] .builder h3{letter-spacing:0; line-height:1.4}
+.builder .q{font-weight:700; font-size:15px; margin:22px 0 10px; display:block}
+.pick{display:flex; flex-wrap:wrap; gap:8px}
+.pick button{border:1.5px solid var(--line); background:var(--bg); border-radius:999px; padding:8px 14px; min-height:42px; font-weight:600; font-size:14.5px; cursor:pointer; transition:.2s}
+.pick button[aria-pressed="true"],.pick button[aria-checked="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.field-in{width:100%; border:1.5px solid var(--line); background:var(--bg); border-radius:14px; padding:12px 14px; font-size:16px; outline:none; transition:border-color .2s}
+.field-in:focus{border-color:var(--accent)}
+textarea.field-in{min-height:88px; resize:vertical}
+.preview{background:var(--surface2); padding:clamp(22px,4vw,40px); display:flex; flex-direction:column; gap:16px; border-inline-start:1px solid var(--line)}
+.preview .lbl{font-weight:700; font-size:15px}
+.bubble{background:#DCF8C6; color:#1D2B1F; border-radius:18px 18px 18px 6px; padding:16px 18px; font-size:15.5px; line-height:1.55; white-space:pre-wrap; box-shadow:0 4px 14px rgba(0,0,0,.06); min-height:120px}
+html[dir="rtl"] .bubble{border-radius:18px 18px 6px 18px}
+.preview .sendrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:auto}
+.preview .note{font-size:14px; color:var(--muted); min-height:1.4em}
+@media (max-width:980px){ .svc-grid{grid-template-columns:1fr 1fr} .feat{grid-template-columns:1fr} .svc-head{grid-template-columns:1fr} .builder{grid-template-columns:1fr} .preview{border-inline-start:0; border-top:1px solid var(--line)} .how{grid-template-columns:1fr 1fr; gap:34px 16px} }
+@media (max-width:620px){ .svc-grid{grid-template-columns:1fr} .feat ul{grid-template-columns:1fr} }
+
+/* Mess to order */
+.mess-head{display:grid; grid-template-columns:1fr auto; gap:30px; align-items:end}
+.toggle{display:inline-flex; align-items:center; gap:12px; padding:8px 8px 8px 20px; border-radius:999px; border:0; background:var(--ink); color:var(--bg); font-weight:600; font-size:16px; cursor:pointer; min-height:54px}
+html[dir="rtl"] .toggle{padding:8px 20px 8px 8px}
+.toggle .k{width:38px; height:38px; border-radius:50%; background:var(--accent); color:var(--onAccent); display:grid; place-items:center; transition:transform .6s var(--ease)}
+.toggle[aria-pressed="true"] .k{transform:rotate(180deg)}
+.board{position:relative; margin-top:44px; min-height:600px; background:var(--surface); border-radius:28px; border:1px solid var(--line); padding:28px; overflow:hidden}
+.board::before{content:""; position:absolute; inset:0; background-image:radial-gradient(var(--line) 1.4px, transparent 1.4px); background-size:24px 24px; opacity:.8; transition:opacity .5s}
+.board.neat::before{opacity:0}
+.thead{display:none; position:relative; grid-template-columns:1.5fr 1fr .9fr 1.4fr; gap:16px; padding:0 18px 12px; font-size:13px; font-weight:700; color:var(--muted); border-bottom:1.5px solid var(--ink)}
+.board.neat .thead{display:grid}
+.items{position:relative; height:540px}
+.board.neat .items{height:auto; display:grid; gap:6px; margin-top:8px}
+.item{position:absolute; left:var(--x); top:var(--y); width:min(230px, 42%); min-height:150px; padding:18px 18px 20px; background:var(--c); color:var(--noteInk); border-radius:6px 6px 18px 6px; transform:rotate(var(--rot)); box-shadow:0 14px 30px rgba(30,25,70,.13); will-change:transform}
+.item .q{font-family:var(--hand); font-size:26px; line-height:1.15; font-weight:600; transition:opacity .3s}
+html[lang="ar"] .item .q{font-size:22px; line-height:1.5}
+.item .pin{position:absolute; top:-7px; left:50%; width:14px; height:14px; margin-left:-7px; border-radius:50%; background:var(--accent); box-shadow:0 2px 0 rgba(0,0,0,.2)}
+.item .row{position:absolute; opacity:0; pointer-events:none}
+.board.neat .item{position:relative; left:auto; top:auto; width:auto; min-height:0; transform:none; border-radius:14px; background:var(--bg); color:var(--ink); box-shadow:none; padding:14px 18px}
+.board.neat .item .q, .board.neat .item .pin{position:absolute; opacity:0; pointer-events:none}
+.board.neat .item .row{position:relative; opacity:1; pointer-events:auto; display:grid; grid-template-columns:1.5fr 1fr .9fr 1.4fr; gap:16px; align-items:center; transition:opacity .4s .35s}
+.row .t{font-weight:600}
+.row .o,.row .n{color:var(--muted); font-size:15px}
+.st{justify-self:start; font-size:13px; font-weight:700; padding:4px 11px; border-radius:999px; color:var(--noteInk); white-space:nowrap}
+.st.p{background:var(--butter)} .st.a{background:var(--blush)} .st.s{background:var(--lilac)} .st.d{background:var(--mint)}
+.mess-foot{margin-top:22px; color:var(--muted); font-size:15px; min-height:1.6em}
+@media (max-width:760px){
+  .mess-head{grid-template-columns:1fr}
+  .board{padding:16px; min-height:660px}
+  .items{height:620px}
+  .item{left:var(--mx); top:var(--my); width:47%; min-height:118px; padding:14px 12px}
+  .item .q{font-size:21px}
+  html[lang="ar"] .item .q{font-size:18px}
+  .thead{display:none!important}
+  .board.neat .item .row{grid-template-columns:1fr auto; gap:4px 12px}
+  .board.neat .row .t{grid-column:1} .board.neat .row .st{grid-column:2; grid-row:1}
+  .board.neat .row .o,.board.neat .row .n{grid-column:1/-1; font-size:14px}
+}
+
+/* Work */
+.work-head{display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:end}
+.filters{display:flex; flex-wrap:wrap; gap:8px; margin-top:40px}
+.filters button{border:1.5px solid var(--line); background:var(--surface); padding:9px 16px; min-height:44px; border-radius:999px; font-weight:600; font-size:15px; cursor:pointer; transition:.2s}
+.filters button[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.filters button .n{opacity:.6; margin-inline-start:6px; font-variant-numeric:tabular-nums}
+.for{margin-top:14px; color:var(--muted); font-size:15px; min-height:1.5em}
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:26px}
+.card{position:relative; text-align:start; border:1px solid var(--line); background:var(--surface); border-radius:var(--r); padding:26px 24px 24px; cursor:pointer; display:flex; flex-direction:column; gap:12px; min-height:270px; transition:transform .4s var(--ease), box-shadow .4s, border-color .3s; overflow:hidden}
+.card:hover{transform:translateY(-5px); box-shadow:0 22px 50px rgba(30,25,70,.12); border-color:var(--accent)}
+.card .top-row{display:flex; justify-content:space-between; align-items:center; gap:10px; position:relative}
+.card .num{font-weight:700; font-size:14px; color:var(--muted); font-variant-numeric:tabular-nums}
+.card h3{font-size:24px; line-height:1.12; letter-spacing:-.02em; margin:6px 0 0; position:relative}
+html[lang="ar"] .card h3{letter-spacing:0; line-height:1.45; font-size:22px}
+.card p{margin:0; color:var(--muted); font-size:15.5px; position:relative}
+.card .bottom{margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; gap:12px; position:relative}
+.card .open{width:42px; height:42px; border-radius:50%; background:var(--bg); display:grid; place-items:center; flex:none; transition:background .3s, color .3s, transform .4s var(--ease)}
+.card:hover .open{background:var(--accent); color:var(--onAccent); transform:rotate(-45deg)}
+html[dir="rtl"] .card:hover .open{transform:rotate(45deg)}
+.card .open svg{width:16px; height:16px}
+.card .blob{position:absolute; width:160px; height:160px; border-radius:50%; inset-inline-end:-60px; top:-60px; background:var(--c); opacity:.55; transition:transform .6s var(--ease)}
+.card:hover .blob{transform:scale(1.25)}
+.card.match{border-color:var(--accent)}
+.card[hidden]{display:none}
+@media (max-width:980px){ .cards{grid-template-columns:1fr 1fr} .work-head{grid-template-columns:1fr} }
+@media (max-width:620px){ .cards{grid-template-columns:1fr} .card{min-height:0} }
+
+/* Dialog */
+dialog{border:0; padding:0; width:min(760px, 100% - 24px); max-height:min(88vh, 900px); border-radius:28px; background:var(--surface); color:var(--ink); box-shadow:0 40px 120px rgba(10,8,30,.35)}
+dialog::backdrop{background:rgba(18,16,40,.55); backdrop-filter:blur(4px)}
+dialog[open]{animation:pop .45s var(--ease)}
+@keyframes pop{from{opacity:0; transform:translateY(24px) scale(.98)}}
+.dlg{padding:clamp(24px,5vw,44px); overflow:auto; max-height:min(88vh, 900px)}
+.dlg .x{position:sticky; top:0; float:right; width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:var(--surface); cursor:pointer; display:grid; place-items:center; margin:-8px -8px 0 12px; z-index:2}
+html[dir="rtl"] .dlg .x{float:left; margin:-8px 12px 0 -8px}
+.dlg .x svg{width:16px; height:16px}
+.dlg h3{font-size:clamp(30px,4vw,42px); line-height:1.05; letter-spacing:-.03em; margin:14px 0 10px}
+html[lang="ar"] .dlg h3{letter-spacing:0; line-height:1.4}
+.dlg .one{font-family:var(--serif); font-style:italic; font-size:24px; color:var(--accent); margin:0 0 26px; line-height:1.3}
+html[lang="ar"] .dlg .one{font-style:normal}
+.dlg dl{margin:0}
+.dlg dt{font-size:13px; font-weight:700; color:var(--muted); padding-top:18px; display:flex; align-items:center; gap:8px}
+.dlg dt::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--accent)}
+.dlg dd{margin:6px 0 0; padding-bottom:18px; border-bottom:1px dashed var(--line)}
+.dlg dd ul{margin:0; padding-inline-start:20px}
+.dlg .navs{display:flex; justify-content:space-between; gap:10px; margin-top:24px}
+.dlg .navs button{border:1.5px solid var(--line); background:var(--bg); padding:10px 18px; min-height:44px; border-radius:999px; font-weight:600; cursor:pointer}
+
+/* Process */
+.process{background:var(--ink); color:var(--bg)}
+.process h2 .soft{color:var(--lilac)}
+.steps{position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:64px}
+.steps .line{position:absolute; top:13px; left:13px; right:13px; height:2px; background:color-mix(in srgb, var(--bg) 20%, transparent)}
+.steps .line i{display:block; height:100%; width:0; background:var(--lilac); transition:width 1.6s var(--ease)}
+html[dir="rtl"] .steps .line i{margin-inline-start:auto; margin-left:auto}
+.steps.in .line i{width:100%}
+.step .dot{width:28px; height:28px; border-radius:50%; background:var(--ink); border:2px solid var(--lilac); position:relative; z-index:1; display:grid; place-items:center; font-size:12px; font-weight:700; transition:background .4s, color .4s}
+.steps.in .step .dot{background:var(--lilac); color:var(--noteInk)}
+.steps.in .step:nth-child(3) .dot{transition-delay:.4s} .steps.in .step:nth-child(4) .dot{transition-delay:.8s} .steps.in .step:nth-child(5) .dot{transition-delay:1.2s}
+.step{position:relative}
+.step h3{font-size:24px; margin:24px 0 10px; letter-spacing:-.02em}
+html[lang="ar"] .step h3{letter-spacing:0}
+.step p{margin:0; color:color-mix(in srgb, var(--bg) 70%, var(--ink)); font-size:16px}
+.step .eg{margin-top:14px; font-family:var(--hand); font-size:22px; color:var(--lilac); line-height:1.3}
+html[lang="ar"] .step .eg{font-size:19px; line-height:1.6}
+@media (max-width:860px){
+  .steps{grid-template-columns:1fr; gap:34px; padding-inline-start:46px}
+  .steps .line{top:0; bottom:0; left:13px; right:auto; width:2px; height:auto}
+  html[dir="rtl"] .steps .line{left:auto; right:13px}
+  .steps .line i{width:100%!important; height:0; transition:height 1.6s var(--ease)}
+  .steps.in .line i{height:100%}
+  .step .dot{position:absolute; inset-inline-start:-46px; top:0}
+  .step h3{margin-top:0}
+}
+
+/* Beyond */
+.tabs{display:flex; gap:6px; flex-wrap:wrap; margin-top:44px; padding:6px; background:var(--surface); border:1px solid var(--line); border-radius:999px; width:max-content; max-width:100%}
+.tabs button{border:0; background:transparent; padding:11px 20px; min-height:44px; border-radius:999px; font-weight:600; font-size:15.5px; cursor:pointer; color:var(--muted); transition:.25s}
+.tabs button[aria-selected="true"]{background:var(--accent); color:var(--onAccent)}
+@media (max-width:640px){ .tabs{border-radius:22px; width:100%} .tabs button{flex:1 1 40%} }
+.panel{margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:22px; animation:rise .5s var(--ease)}
+@keyframes rise{from{opacity:0; transform:translateY(14px)}}
+.pcard{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:30px}
+.pcard.hero-c{background:var(--c); color:var(--noteInk); border:0; position:relative; overflow:hidden}
+.pcard.hero-c .meta{font-weight:600; font-size:15px; opacity:.75}
+.pcard.hero-c h3{font-size:clamp(32px,3.6vw,46px); line-height:1; letter-spacing:-.035em; margin:12px 0 16px; position:relative}
+html[lang="ar"] .pcard.hero-c h3{letter-spacing:0; line-height:1.35}
+.pcard.hero-c p{margin:0; font-size:17px; max-width:44ch; position:relative}
+.pcard.hero-c .big{position:absolute; inset-inline-end:-10px; bottom:-40px; font-family:var(--serif); font-style:italic; font-size:200px; line-height:1; opacity:.18; pointer-events:none}
+.pcard h4{margin:0 0 14px; font-size:16px; font-weight:700}
+.pcard ul{margin:0; padding:0; list-style:none; display:grid; gap:10px}
+.pcard li{display:flex; gap:10px; align-items:flex-start; font-size:16px}
+.pcard li::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--accent); flex:none; margin-top:9px}
+.split{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+.split h4 small{font-weight:500; color:var(--muted)}
+@media (max-width:860px){ .panel,.split{grid-template-columns:1fr} }
+
+/* Skills */
+.skill-grid{display:grid; grid-template-columns:1.3fr .7fr; gap:22px; margin-top:50px}
+.groups{display:grid; gap:14px}
+.group{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:22px 24px; transition:border-color .3s, box-shadow .3s}
+.group.match{border-color:var(--accent); box-shadow:0 0 0 3px var(--accentSoft)}
+.group h3{margin:0 0 14px; font-size:19px; display:flex; align-items:center; gap:10px}
+.group h3 i{width:10px; height:10px; border-radius:50%; background:var(--c)}
+.side{display:grid; gap:14px; align-content:start}
+.tool{display:flex; justify-content:space-between; gap:12px; padding:12px 0; border-bottom:1px dashed var(--line)}
+.tool:last-child{border:0}
+.tool b{font-weight:600}
+.tool span{color:var(--muted); font-size:14.5px; text-align:end}
+.lang{display:flex; justify-content:space-between; align-items:center; padding:10px 0}
+.meter{display:flex; gap:5px}
+.meter i{width:11px; height:11px; border-radius:50%; background:var(--line)}
+.meter i.f{background:var(--accent)}
+.edu-c{background:var(--accent); color:var(--onAccent); border:0}
+.edu-c h4{font-size:24px; letter-spacing:-.02em}
+.edu-c p{margin:8px 0 0; opacity:.9; font-size:15.5px}
+@media (max-width:860px){ .skill-grid{grid-template-columns:1fr} }
+
+/* Contact */
+.contact{padding-bottom:60px}
+.contact-box{position:relative; background:var(--ink); color:var(--bg); border-radius:36px; padding:clamp(36px,7vw,90px); overflow:hidden}
+.contact-box h2{font-size:clamp(46px,8vw,110px)}
+.contact-box h2 .soft{color:var(--lilac)}
+.contact-box p{color:color-mix(in srgb, var(--bg) 72%, var(--ink)); max-width:48ch; font-size:19px; margin:22px 0 0}
+.contact-box .ctas{display:flex; flex-wrap:wrap; gap:12px; margin-top:36px}
+.contact-box .btn.primary{background:var(--lilac); color:var(--noteInk)}
+.contact-box .btn.ghost{border-color:var(--bg); color:var(--bg)}
+.contact-box .copy{border:1.5px solid color-mix(in srgb, var(--bg) 40%, transparent); background:transparent; color:var(--bg); border-radius:999px; padding:10px 16px; min-height:50px; font-weight:600; cursor:pointer}
+#mini{position:absolute; inset:0; width:100%; height:100%; opacity:.6}
+.contact-box > *:not(canvas){position:relative; z-index:1}
+.foot{display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; margin-top:28px; color:var(--muted); font-size:14.5px}
+
+/* Reveal */
+.js .rv{opacity:0; transform:translateY(26px); transition:opacity .8s var(--ease), transform .8s var(--ease)}
+.js .rv.in{opacity:1; transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important; transition-duration:.01ms!important; transition-delay:0s!important}
+  .js .rv,.hero h1 .w{opacity:1; transform:none}
+}
+html:not(.js) .hero h1 .w{opacity:1!important; transform:none!important}
+</style>
+</head>
+<body class="">
+
+<header class="top" id="hdr">
+  <div class="wrap bar">
+    <a class="logo" href="#home">
+      <svg viewBox="0 0 30 30" aria-hidden="true"><path d="M6 22 11 8l4 10 4-10 5 14" fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-linejoin="round"></path><circle cx="6" cy="22" r="2.6" fill="var(--accent)"></circle><circle cx="11" cy="8" r="2.6" fill="var(--ink)"></circle><circle cx="15" cy="18" r="2.6" fill="var(--accent)"></circle><circle cx="19" cy="8" r="2.6" fill="var(--ink)"></circle><circle cx="24" cy="22" r="2.6" fill="var(--accent)"></circle></svg>
+      <span data-t="name">Maryam Zahid</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about" data-t="nav_about">About</a><a href="#services" data-t="nav_services">Services</a><a href="#work" data-t="nav_work">Work</a><a href="#beyond" data-t="nav_beyond">Beyond work</a><a href="#skills" data-t="nav_skills">Skills</a>
+    </nav>
+    <div class="tools-top">
+      <button class="lang-btn" id="langBtn" type="button" lang="ar">العربية</button>
+      <a class="hello" href="#request" data-t="nav_hire">Hire me</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="dotnav" id="dotnav" aria-label="Sections">
+  <div class="fill" id="dfill" style="height: 0px;"></div>
+  <a href="#home" class="on"><span data-t="d_home">Start</span><i></i></a>
+  <a href="#about"><span data-t="nav_about">About</span><i></i></a>
+  <a href="#services"><span data-t="nav_services">Services</span><i></i></a>
+  <a href="#method"><span data-t="d_method">Mess to order</span><i></i></a>
+  <a href="#work"><span data-t="nav_work">Work</span><i></i></a>
+  <a href="#process"><span data-t="d_process">How I work</span><i></i></a>
+  <a href="#beyond"><span data-t="nav_beyond">Beyond work</span><i></i></a>
+  <a href="#skills"><span data-t="nav_skills">Skills</span><i></i></a>
+  <a href="#contact"><span data-t="d_contact">Contact</span><i></i></a>
+</nav>
+
+<a class="wa-float" id="waFloat" target="_blank" rel="noopener" href="https://wa.me/966595593927?text=Hi%20Maryam%2C%20I%20found%20your%20portfolio%20and%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project." aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9 2 .9 2.8.9 3.8.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.7-.5Z"></path></svg>
+</a>
+
+<main>
+<section class="hero" id="home">
+  <canvas id="field" aria-hidden="true" width="1280" height="999"></canvas>
+  <span class="node" data-n="ops" style="--t:24%; --e:9%">Operations</span>
+  <span class="node" data-n="cv" style="--t:39%; --e:23%">CVs &amp; portfolios</span>
+  <span class="node" data-n="deck" style="--t:52%; --e:6%">Presentations</span>
+  <span class="node" data-n="web" style="--t:66%; --e:20%">Websites</span>
+  <span class="node" data-n="video" style="--t:79%; --e:8%">Video &amp; AI</span>
+  <span class="node" data-n="teach" style="--t:15%; --e:27%">Tutoring</span>
+  <div class="wrap">
+    <div class="pills">
+      <span class="hello-line"><span class="av" data-t="initials">MZ</span><span data-t="hi">Hi, I’m Maryam, based in Riyadh</span></span>
+      <a class="avail" href="#services"><span class="live" aria-hidden="true"></span><span data-t="avail">Available for freelance projects</span></a>
+    </div>
+    <h1 id="h1" aria-label="I connect the dots. Then bring the idea to life."><span class="w" aria-hidden="true" style="transition-delay:0ms">I</span> <span class="w" aria-hidden="true" style="transition-delay:90ms">connect</span> <span class="w" aria-hidden="true" style="transition-delay:180ms">the</span> <span class="w" aria-hidden="true" style="transition-delay:270ms">dots.</span><span class="l2" aria-hidden="true"><span class="w" style="transition-delay:400ms">Then</span> <span class="w" style="transition-delay:470ms">bring</span> <span class="w" style="transition-delay:540ms">the</span> <span class="w" style="transition-delay:610ms">idea</span> <span class="w" style="transition-delay:680ms">to</span> <span class="w" style="transition-delay:750ms">life.</span></span></h1>
+    <p class="sub" id="sub">Websites, portfolios, CVs, presentations and creative content, backed by real experience in business operations. I turn complex information into work people can understand, use and act on.</p>
+    <div class="why">
+      <p id="whyq" data-t="why">What brings you here?</p>
+      <div class="opts" role="radiogroup" aria-labelledby="whyq" id="opts"><button type="button" role="radio" data-aud="hire" aria-checked="false" tabindex="-1">I want to hire you</button><button type="button" role="radio" data-aud="ops" aria-checked="false" tabindex="-1">Business &amp; operations</button><button type="button" role="radio" data-aud="creative" aria-checked="false" tabindex="-1">Digital &amp; creative</button><button type="button" role="radio" data-aud="all" aria-checked="true" tabindex="0">A little of everything</button></div>
+    </div>
+    <div class="ctas">
+      <a class="btn primary" href="#services"><span data-t="cta1">See my services</span><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></a>
+      <a class="btn ghost" href="#work" data-t="cta2">Explore my work</a>
+    </div>
+  </div>
+  <p class="hint" id="hint">move your cursor to connect the dots ✦</p>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="rv"><span class="sec-num"><i></i><span data-t="about_k">A little about me</span></span><h2 data-th="about_h">Structure for the details.<br><span class="soft">Imagination for the rest.</span></h2></div>
+    <div class="about-grid">
+      <div class="rv"><p class="lead" data-t="about_p1">I’m an administration and operations professional who enjoys taking information that feels scattered or complicated and turning it into something organized, understandable and useful.</p><p class="lead" data-t="about_p2">At International Specialized Foods Co., I connect people and information across finance, sales, operations, kitchen management, HR and external partners. Outside that role, I take on freelance projects like websites, CVs and presentations, have tutored Cambridge students since 2019, led volunteer teams at public events, and I’m building my own creative studio, Velris.</p><p class="lead" data-t="about_p3">I love work that needs both sides of the brain: a management update in the morning, a website in the afternoon.</p></div>
+      <div class="facts rv" id="facts"><div class="fact"><i style="background:var(--accent)"></i><div><b>Admin Coordinator, ISFC</b><span>Strategy and operations transformation, October 2024 to present</span></div></div><div class="fact"><i style="background:var(--wa)"></i><div><b>Freelance designer and builder</b><span>Websites, portfolios, CVs and presentations</span></div></div><div class="fact"><i style="background:var(--blush)"></i><div><b>Cambridge tutor since 2019</b><span>IGCSE, O-Level and A-Level students</span></div></div><div class="fact"><i style="background:var(--mint)"></i><div><b>Event volunteer, 2022 to 2024</b><span>Konoz Retaj conferences and public events</span></div></div><div class="fact"><i style="background:var(--butter)"></i><div><b>Founder, Velris</b><span>Creative and marketing studio, in development</span></div></div><div class="fact"><i style="background:var(--lilac)"></i><div><b>English, Urdu and Arabic</b><span>Fluent, fluent and basic</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="svc-head rv">
+      <div><span class="sec-num"><i></i><span data-t="s_k">Work with me</span></span><h2 data-th="s_h">Need it designed?<br><span class="soft">I’ll build it for you.</span></h2></div>
+      <p class="lead" data-t="s_lead">Clear, polished work for individuals and small businesses, in English or Arabic. Add what you need to your request, then send it on WhatsApp or email.</p>
+    </div>
+    <div class="feat rv" id="feat"><div><span class="badge">✦ You’re looking at one</span><h3>Portfolio websites</h3><p>An interactive personal website like this one, built around your story: for job seekers, freelancers, executives and creatives. Shared with one link.</p>
+    <ul><li>Custom design and animations</li><li>Writing your content with you</li><li>English and Arabic versions</li><li>Works on every phone</li><li>Help getting it online</li></ul>
+    <button class="add" type="button" data-k="portfolio" aria-pressed="false">Add to my request</button></div>
+    <div class="browser" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span class="url">https://<b id="typed">yourname.com</b><span class="caret"></span></span></div>
+    <div class="page"><div class="mini-h">Your story,</div><div class="mini-s">in one link.</div>
+    <div class="blocks"><span style="--c:var(--blush)"></span><span style="--c:var(--mint)"></span><span style="--c:var(--butter)"></span></div>
+    <div class="line" style="width:80%"></div><div class="line" style="width:55%"></div></div></div></div>
+    <div class="svc-grid" id="svcGrid"><article class="svc" style="--c:var(--lilac)">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="15" rx="2"></rect><path d="M3 8h18M7 12h6M7 15h4"></path></svg></span>
+    <h3>Business websites</h3><p>Landing pages and simple sites for small businesses, restaurants and home businesses.</p><div class="chips"><span class="chip">Landing pages</span><span class="chip">Menus and QR pages</span><span class="chip">WhatsApp buttons</span></div>
+    <button class="add" type="button" data-k="web" aria-pressed="false">Add to my request</button></article><article class="svc" style="--c:var(--mint)">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"></rect><circle cx="12" cy="9" r="2.5"></circle><path d="M8.5 15.5c.8-1.6 2-2.3 3.5-2.3s2.7.7 3.5 2.3M8 18.5h8"></path></svg></span>
+    <h3>CVs and cover letters</h3><p>A CV that reads well and looks sharp, written around the job you want.</p><div class="chips"><span class="chip">Recruiter-friendly CV</span><span class="chip">Designed CV</span><span class="chip">Cover letter</span></div>
+    <button class="add" type="button" data-k="cv" aria-pressed="false">Add to my request</button></article><article class="svc" style="--c:var(--butter)">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"></rect><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"></path></svg></span>
+    <h3>Presentations and company profiles</h3><p>Decks and profiles that tell your story clearly to clients, investors or management.</p><div class="chips"><span class="chip">Pitch decks</span><span class="chip">Company profiles</span><span class="chip">Business plans</span></div>
+    <button class="add" type="button" data-k="deck" aria-pressed="false">Add to my request</button></article><article class="svc" style="--c:var(--blush)">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="4"></circle><rect x="13" y="13" width="8" height="8" rx="1.5"></rect><path d="M14 4l6 6M4 14l6 6"></path></svg></span>
+    <h3>Branding and social media</h3><p>A consistent look across your posts, menus, cards and documents.</p><div class="chips"><span class="chip">Brand direction</span><span class="chip">Social templates</span><span class="chip">Menus and flyers</span></div>
+    <button class="add" type="button" data-k="brand" aria-pressed="false">Add to my request</button></article><article class="svc" style="--c:var(--lilac)">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"></rect><path d="m16 10 5-3v10l-5-3"></path></svg></span>
+    <h3>AI video and content</h3><p>Short promo videos and reels, from script to final cut, made with AI tools.</p><div class="chips"><span class="chip">Scripts</span><span class="chip">Promo reels</span><span class="chip">Product videos</span></div>
+    <button class="add" type="button" data-k="video" aria-pressed="false">Add to my request</button></article><article class="svc" style="--c:var(--mint)">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"></path><path d="M14 3v5h5M10 13h6M10 17h6"></path></svg></span>
+    <h3>Business documents and SOPs</h3><p>The paperwork that helps a small business run smoothly.</p><div class="chips"><span class="chip">SOPs and checklists</span><span class="chip">Job descriptions</span><span class="chip">Forms and templates</span></div>
+    <button class="add" type="button" data-k="docs" aria-pressed="false">Add to my request</button></article></div>
+    <div class="how rv" id="how"><div><b>Message me</b><span>Tell me what you need on WhatsApp or email.</span></div><div><b>Get a quote</b><span>A clear price and timeline before anything starts.</span></div><div><b>Review as I build</b><span>You see drafts and tell me what to change.</span></div><div><b>Launch</b><span>You get the final files or a live link.</span></div></div>
+    <div class="builder rv" id="request">
+      <div class="form">
+        <h3 data-t="b_title">Build your request</h3>
+        <span class="q" id="bq1" data-t="b_q1">What do you need?</span>
+        <div class="pick" id="bPick" role="group" aria-labelledby="bq1"><button type="button" data-k="portfolio" aria-pressed="false">Portfolio websites</button><button type="button" data-k="web" aria-pressed="false">Business websites</button><button type="button" data-k="cv" aria-pressed="false">CVs and cover letters</button><button type="button" data-k="deck" aria-pressed="false">Presentations and company profiles</button><button type="button" data-k="brand" aria-pressed="false">Branding and social media</button><button type="button" data-k="video" aria-pressed="false">AI video and content</button><button type="button" data-k="docs" aria-pressed="false">Business documents and SOPs</button></div>
+        <span class="q" id="bq2" data-t="b_q2">When do you need it?</span>
+        <div class="pick" id="bWhen" role="radiogroup" aria-labelledby="bq2"><button type="button" role="radio" aria-checked="true" data-i="0">Flexible</button><button type="button" role="radio" aria-checked="false" data-i="1">Within a month</button><button type="button" role="radio" aria-checked="false" data-i="2">Within two weeks</button><button type="button" role="radio" aria-checked="false" data-i="3">It’s urgent</button></div>
+        <label class="q" for="bName" data-t="b_name">Your name (optional)</label>
+        <input class="field-in" id="bName" type="text" autocomplete="name">
+        <label class="q" for="bNote" data-t="b_note">Anything else? (optional)</label>
+        <textarea class="field-in" id="bNote" placeholder="For example: I’m a graphic designer and need a portfolio in English and Arabic."></textarea>
+      </div>
+      <div class="preview">
+        <span class="lbl" data-t="b_prev">Your message</span>
+        <div class="bubble" id="bubble" aria-live="polite">…</div>
+        <p class="note" id="bHint">Pick at least one service to start your message.</p>
+        <div class="sendrow">
+          <a class="btn wa" id="sendWa" target="_blank" rel="noopener" disabled="" aria-disabled="true"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Z"></path></svg><span data-t="b_wa">Send on WhatsApp</span></a>
+          <a class="btn ghost" id="sendMail" data-t="b_mail" disabled="" aria-disabled="true">Send by email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="mess-head rv">
+      <div><span class="sec-num"><i></i><span data-t="m_k">What I actually do</span></span><h2 data-th="m_h">From scattered notes<br><span class="soft">to a clear next step.</span></h2>
+      <p class="lead" style="margin-top:22px" data-t="m_lead">This is a typical Monday: loose questions from five departments. Press the button to see what I turn them into.</p></div>
+      <button class="toggle" id="orgBtn" type="button" aria-pressed="false"><span id="orgLbl">Organize it</span><span class="k" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 5h12M2 8h12M2 11h8"></path></svg></span></button>
+    </div>
+    <div class="board rv" id="board">
+      <div class="thead" aria-hidden="true"><span data-t="th1">Item</span><span data-t="th2">Owner</span><span data-t="th3">Status</span><span data-t="th4">Next step</span></div>
+      <div class="items" id="items"><div class="item" style="--x:3%; --y:4%; --rot:-5deg; --mx:1%; --my:1%; --c:var(--butter)">
+    <span class="pin" aria-hidden="true"></span><span class="q">supplier docs still missing??</span>
+    <span class="row"><span class="t">Supplier registration documents</span><span class="o">Procurement</span><span class="st p">Pending</span><span class="n">Chase the two missing certificates by Wednesday</span></span></div><div class="item" style="--x:27%; --y:14%; --rot:4deg; --mx:51%; --my:3%; --c:var(--blush)">
+    <span class="pin" aria-hidden="true"></span><span class="q">who approves the quote?</span>
+    <span class="row"><span class="t">Client quotation</span><span class="o">Finance, then CEO</span><span class="st a">Waiting approval</span><span class="n">Send costing summary for sign-off</span></span></div><div class="item" style="--x:52%; --y:3%; --rot:-3deg; --mx:2%; --my:25%; --c:var(--mint)">
+    <span class="pin" aria-hidden="true"></span><span class="q">engineer lands Tuesday — hotel? pickup?</span>
+    <span class="row"><span class="t">Engineer visit</span><span class="o">Admin</span><span class="st s">Scheduled</span><span class="n">Confirm hotel and airport pickup</span></span></div><div class="item" style="--x:76%; --y:12%; --rot:6deg; --mx:50%; --my:27%; --c:var(--lilac)">
+    <span class="pin" aria-hidden="true"></span><span class="q">kitchen needs the final menu</span>
+    <span class="row"><span class="t">Final menu for kitchen</span><span class="o">Chef team</span><span class="st s">In progress</span><span class="n">Share approved menu and quantities</span></span></div><div class="item" style="--x:10%; --y:52%; --rot:3deg; --mx:1%; --my:50%; --c:var(--butter)">
+    <span class="pin" aria-hidden="true"></span><span class="q">update for management by Thursday!</span>
+    <span class="row"><span class="t">Weekly management update</span><span class="o">Admin</span><span class="st d">Ready</span><span class="n">Send consolidated summary Thursday 9 am</span></span></div><div class="item" style="--x:40%; --y:48%; --rot:-6deg; --mx:51%; --my:52%; --c:var(--mint)">
+    <span class="pin" aria-hidden="true"></span><span class="q">customs papers for the shipment</span>
+    <span class="row"><span class="t">Equipment shipment customs</span><span class="o">Logistics</span><span class="st p">Pending</span><span class="n">Forward invoice and packing list to broker</span></span></div><div class="item" style="--x:70%; --y:55%; --rot:-2deg; --mx:24%; --my:75%; --c:var(--blush)">
+    <span class="pin" aria-hidden="true"></span><span class="q">SOP v2 — comments from finance?</span>
+    <span class="row"><span class="t">SOP draft, version 2</span><span class="o">Finance</span><span class="st a">Waiting approval</span><span class="n">Merge comments and reissue</span></span></div></div>
+    </div>
+    <p class="mess-foot" id="messFoot" aria-live="polite">Seven loose ends, no owners, no dates.</p>
+  </div>
+</section>
+
+<section id="work" style="padding-top:0">
+  <div class="wrap">
+    <div class="work-head rv">
+      <div><span class="sec-num"><i></i><span data-t="w_k">Selected work</span></span><h2 data-th="w_h">Real projects.<br><span class="soft">My part in each.</span></h2></div>
+      <p class="lead" data-t="w_lead">Tap any project to see the purpose, my role, what I made and where it stands. Concepts and pilots are labeled as such.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"><button type="button" data-f="all" aria-pressed="true">All<span class="n">13</span></button><button type="button" data-f="ops" aria-pressed="false">Operations<span class="n">4</span></button><button type="button" data-f="docs" aria-pressed="false">Documentation<span class="n">1</span></button><button type="button" data-f="digital" aria-pressed="false">Digital<span class="n">4</span></button><button type="button" data-f="creative" aria-pressed="false">Creative<span class="n">4</span></button></div>
+    <p class="for" id="forLine" aria-live="polite"></p>
+    <div class="cards" id="cards"><button class="card" type="button" data-i="0" style="--c:var(--lilac)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">01</span></span>
+      <h3>Executive and personal portfolio websites</h3><p>Turning a career into a website people remember.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Digital</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="1" style="--c:var(--mint)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">02</span><span class="tag ">Ongoing</span></span>
+      <h3>Management reporting and action tracking</h3><p>Making ongoing work easier to follow.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Operations</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="2" style="--c:var(--butter)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">03</span><span class="tag ">Ongoing</span></span>
+      <h3>SOPs, job descriptions and approval workflows</h3><p>Turning recurring tasks into clear procedures.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Documentation</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="3" style="--c:var(--lilac)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">04</span><span class="tag concept">Concept</span></span>
+      <h3>Command Center dashboard concepts</h3><p>Designing what management should see at a glance.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Digital</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="4" style="--c:var(--lilac)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">05</span><span class="tag pilot">Pilot</span></span>
+      <h3>Hospital meal-ordering portal</h3><p>Connecting the customer journey with kitchen needs.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Digital</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="5" style="--c:var(--lilac)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">06</span></span>
+      <h3>QR nutrition information pages</h3><p>Making meal information easy to reach.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Digital</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="6" style="--c:var(--mint)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">07</span><span class="tag ">Ongoing</span></span>
+      <h3>National Catering project coordination</h3><p>Keeping a multi-party project moving.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Operations</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="7" style="--c:var(--mint)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">08</span><span class="tag ">Ongoing</span></span>
+      <h3>Technical supplier coordination</h3><p>Translating technical questions into clear asks.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Operations</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="8" style="--c:var(--mint)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">09</span><span class="tag paused">Event postponed</span></span>
+      <h3>Global Health Exhibition 2026</h3><p>Preparing healthcare catering for a big stage.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Operations</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="9" style="--c:var(--blush)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">10</span></span>
+      <h3>HPLIA Central Kitchen video</h3><p>Turning a kitchen into a story.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Creative</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="10" style="--c:var(--blush)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">11</span></span>
+      <h3>ISFC corporate video</h3><p>A cinematic picture of the whole company.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Creative</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="11" style="--c:var(--blush)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">12</span><span class="tag concept">Concept</span></span>
+      <h3>Diet World presentations and campaigns</h3><p>Positioning a healthy food brand.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Creative</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button><button class="card" type="button" data-i="12" style="--c:var(--blush)">
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">13</span><span class="tag ">Ongoing</span></span>
+      <h3>Business presentations and company profiles</h3><p>Giving business ideas a clear visual story.</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">Creative</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"></path></svg></span></span></button></div>
+  </div>
+</section>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+  <div class="dlg">
+    <button class="x" id="dClose" type="button"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"></path></svg></button>
+    <div id="dTags" class="chips"></div>
+    <h3 id="dTitle"></h3>
+    <p class="one" id="dOne"></p>
+    <dl id="dBody"></dl>
+    <div class="navs"><button type="button" id="dPrev"></button><button type="button" id="dNext"></button></div>
+  </div>
+</dialog>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="rv"><span class="sec-num" style="color:var(--lilac)"><i style="background:var(--lilac)"></i><span data-t="p_k">How I work</span></span><h2 data-th="p_h">Four steps,<br><span class="soft">every time.</span></h2></div>
+    <div class="steps" id="steps"><div class="line" aria-hidden="true"><i></i></div><div class="step"><div class="dot">1</div><h3>Understand the purpose</h3><p>What needs to happen, who needs the information and what a useful result looks like.</p><div class="eg">“Who reads this, and what do they decide?”</div></div><div class="step"><div class="dot">2</div><h3>Organize the details</h3><p>Bring the information together, spot the gaps and give the work a clear structure.</p><div class="eg">“What’s missing, and who has it?”</div></div><div class="step"><div class="dot">3</div><h3>Build something practical</h3><p>A report, process, presentation or website that people can understand and use.</p><div class="eg">“Can someone new follow this?”</div></div><div class="step"><div class="dot">4</div><h3>Refine and follow through</h3><p>Check the details, take in feedback and keep the next steps visible until it’s done.</p><div class="eg">“Who’s doing what, by when?”</div></div></div>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="wrap">
+    <div class="rv"><span class="sec-num"><i></i><span data-t="bz_k">Beyond the day job</span></span><h2 data-th="bz_h">Teaching, leading,<br><span class="soft">and building my own thing.</span></h2></div>
+    <div class="tabs" role="tablist" id="btabs" aria-label="Beyond work"><button type="button" role="tab" id="bt0" aria-selected="true" aria-controls="bpanel" tabindex="0">Tutoring</button><button type="button" role="tab" id="bt1" aria-selected="false" aria-controls="bpanel" tabindex="-1">Volunteering</button><button type="button" role="tab" id="bt2" aria-selected="false" aria-controls="bpanel" tabindex="-1">Velris</button><button type="button" role="tab" id="bt3" aria-selected="false" aria-controls="bpanel" tabindex="-1">Her Next Chapter</button></div>
+    <div id="bpanel" role="tabpanel" aria-labelledby="bt0"><div class="panel"><div class="pcard hero-c" style="--c:var(--lilac)"><span class="meta">2019 to present · private and online</span><h3>Cambridge tutor</h3><p>I help IGCSE, O-Level and A-Level students understand difficult topics, prepare for exams and organize their studies, adapting to how each student learns.</p><span class="big" aria-hidden="true">Aa</span></div>
+   <div class="pcard"><h4>Subjects</h4><div class="chips" style="margin-bottom:24px"><span class="chip">IT</span><span class="chip">Computer Science</span><span class="chip">English</span><span class="chip">Mathematics</span><span class="chip">Science</span><span class="chip">Business</span></div><h4>How I teach</h4><ul><li>Explain hard concepts in plain language</li><li>Build study plans and revision routines</li><li>Prepare students for exam conditions</li><li>Encourage confidence and independent thinking</li></ul></div></div></div>
+  </div>
+</section>
+
+<section id="skills" style="padding-top:0">
+  <div class="wrap">
+    <div class="rv"><span class="sec-num"><i></i><span data-t="sk_k">Skills and tools</span></span><h2 data-th="sk_h">What I bring<br><span class="soft">to the table.</span></h2></div>
+    <div class="skill-grid">
+      <div class="groups" id="groups"><div class="group" data-aud="ops" style="--c:var(--mint)"><h3><i></i>Administration and coordination</h3><div class="chips"><span class="chip">Executive support</span><span class="chip">Cross-department communication</span><span class="chip">Action tracking</span><span class="chip">Scheduling and logistics</span><span class="chip">Supplier coordination</span><span class="chip">Event support</span></div></div><div class="group" data-aud="ops" style="--c:var(--butter)"><h3><i></i>Writing and documentation</h3><div class="chips"><span class="chip">Professional correspondence</span><span class="chip">SOPs and manuals</span><span class="chip">Job descriptions</span><span class="chip">CVs and company profiles</span><span class="chip">Website copy</span><span class="chip">Video scripts</span></div></div><div class="group" data-aud="ops" style="--c:var(--lilac)"><h3><i></i>Operations and process</h3><div class="chips"><span class="chip">Workflow and tracker design</span><span class="chip">Spotting missing inputs</span><span class="chip">Mapping responsibilities</span><span class="chip">Project readiness follow-up</span></div></div><div class="group" data-aud="creative" style="--c:var(--blush)"><h3><i></i>Creative and marketing</h3><div class="chips"><span class="chip">Website design</span><span class="chip">Presentation design</span><span class="chip">Branding concepts</span><span class="chip">Campaign concepts</span><span class="chip">Menus and promo materials</span><span class="chip">Creative direction</span><span class="chip">AI visuals and video</span></div></div><div class="group" data-aud="all" style="--c:var(--accentSoft)"><h3><i></i>Teaching and people</h3><div class="chips"><span class="chip">Simplifying complex ideas</span><span class="chip">Personalized learning</span><span class="chip">Volunteer leadership</span><span class="chip">Team coordination</span><span class="chip">Adaptability</span></div></div></div>
+      <div class="side">
+        <div class="pcard"><h4 data-t="tools_h">Tools I use daily</h4><div id="toolList"><div class="tool"><b dir="ltr">Canva</b><span>Decks, branded documents, visuals</span></div><div class="tool"><b dir="ltr">PowerPoint</b><span>Business presentations</span></div><div class="tool"><b dir="ltr">Word</b><span>Documents, templates, reports</span></div><div class="tool"><b dir="ltr">Excel</b><span>Trackers and organizing information</span></div><div class="tool"><b dir="ltr">Runway</b><span>AI-assisted video</span></div><div class="tool"><b dir="ltr">ChatGPT &amp; Claude</b><span>Research, drafting, ideas, website builds</span></div></div></div>
+        <div class="pcard"><h4 data-t="lang_h">Languages</h4><div id="langList"><div class="lang"><b>English</b><span class="meter" role="img" aria-label="Fluent"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></span></div><div class="lang"><b>Urdu</b><span class="meter" role="img" aria-label="Fluent"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></span></div><div class="lang"><b>Arabic</b><span class="meter" role="img" aria-label="Basic"><i class="f"></i><i class="f"></i><i class=""></i><i class=""></i><i class=""></i></span></div></div></div>
+        <div class="pcard edu-c"><h4 data-t="edu_h">Cambridge A-Levels</h4><p data-t="edu_p">Homeschooled, including IT and Computer Science. Learning on my own taught me discipline and how to own my progress.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-box rv">
+      <canvas id="mini" aria-hidden="true" width="1180" height="560"></canvas>
+      <h2 data-th="c_h">Let’s connect<br><span class="soft">the next dot.</span></h2>
+      <p data-t="c_p">Have a project, a role or an idea? Message me on WhatsApp or send an email, and I’ll reply personally.</p>
+      <div class="ctas">
+        <a class="btn wa" id="cWa" target="_blank" rel="noopener" href="https://wa.me/966595593927?text=Hi%20Maryam%2C%20I%20found%20your%20portfolio%20and%20I%E2%80%99d%20like%20to%20talk%20about%20a%20project."><span data-t="c_wa">Message on WhatsApp</span></a>
+        <a class="btn primary" href="mailto:jamessamyabc@gmail.com" dir="ltr">jamessamyabc@gmail.com</a>
+        <button class="copy" type="button" id="copyBtn" data-t="copy">Copy email</button>
+        <a class="btn ghost" href="tel:+966595593927" dir="ltr">+966 59 559 3927</a>
+      </div>
+    </div>
+    <div class="foot"><span data-t="foot">© 2026 Maryam Zahid, Riyadh</span><a href="#home" data-t="totop">Back to the top ↑</a></div>
+  </div>
+</section>
+</main>
+
+<script>
+const PHONE = '966595593927', EMAIL = 'jamessamyabc@gmail.com';
+const $ = s => document.querySelector(s);
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const coarse = matchMedia('(pointer:coarse)').matches;
+document.documentElement.classList.add('js');
+let lang = 'en', audience = 'all', filter = 'all', current = 0, neat = false, btab = 0, when = 0;
+const sel = new Set();
+try { const s = localStorage.getItem('mz-lang'); if (s === 'ar' || s === 'en') lang = s; } catch(e){}
+const L = o => (o && typeof o === 'object' && 'en' in o) ? o[lang] : o;
+
+const T = {
+en:{
+ title:"Maryam Zahid | Websites, CVs, presentations", name:"Maryam Zahid", initials:"MZ", lang:"العربية", menu:"Menu",
+ nav_about:"About", nav_services:"Services", nav_work:"Work", nav_beyond:"Beyond work", nav_skills:"Skills", nav_hire:"Hire me",
+ d_home:"Start", d_method:"Mess to order", d_process:"How I work", d_contact:"Contact",
+ hi:"Hi, I’m Maryam, based in Riyadh", avail:"Available for freelance projects",
+ h1a:"I connect the dots.", h1b:"Then bring the idea to life.",
+ why:"What brings you here?",
+ cta1:"See my services", cta2:"Explore my work",
+ hint:"move your cursor to connect the dots ✦", hintT:"tap anywhere to add dots ✦", hintDone:"there you go, connected ✦",
+ about_k:"A little about me", about_h:"Structure for the details.<br><span class=\"soft\">Imagination for the rest.</span>",
+ about_p1:"I’m an administration and operations professional who enjoys taking information that feels scattered or complicated and turning it into something organized, understandable and useful.",
+ about_p2:"At International Specialized Foods Co., I connect people and information across finance, sales, operations, kitchen management, HR and external partners. Outside that role, I take on freelance projects like websites, CVs and presentations, have tutored Cambridge students since 2019, led volunteer teams at public events, and I’m building my own creative studio, Velris.",
+ about_p3:"I love work that needs both sides of the brain: a management update in the morning, a website in the afternoon.",
+ s_k:"Work with me", s_h:"Need it designed?<br><span class=\"soft\">I’ll build it for you.</span>",
+ s_lead:"Clear, polished work for individuals and small businesses, in English or Arabic. Add what you need to your request, then send it on WhatsApp or email.",
+ add:"Add to my request", added:"Added ✓",
+ b_title:"Build your request", b_q1:"What do you need?", b_q2:"When do you need it?", b_name:"Your name (optional)", b_note:"Anything else? (optional)",
+ b_ph:"For example: I’m a graphic designer and need a portfolio in English and Arabic.", b_prev:"Your message", b_wa:"Send on WhatsApp", b_mail:"Send by email",
+ b_empty:"Pick at least one service to start your message.", b_ready:"Opens WhatsApp or your email app with this message ready to send.",
+ m_k:"What I actually do", m_h:"From scattered notes<br><span class=\"soft\">to a clear next step.</span>",
+ m_lead:"This is a typical Monday: loose questions from five departments. Press the button to see what I turn them into.",
+ org:"Organize it", scatter:"Scatter it again", mf0:"Seven loose ends, no owners, no dates.", mf1:"Same seven items: every one has an owner, a status and a next step.",
+ th1:"Item", th2:"Owner", th3:"Status", th4:"Next step",
+ w_k:"Selected work", w_h:"Real projects.<br><span class=\"soft\">My part in each.</span>",
+ w_lead:"Tap any project to see the purpose, my role, what I made and where it stands. Concepts and pilots are labeled as such.",
+ d_purpose:"The purpose", d_role:"My role", d_made:"What I created or coordinated", d_tools:"Tools and approach", d_output:"Output",
+ prev:"Previous project", next:"Next project", close:"Close",
+ p_k:"How I work", p_h:"Four steps,<br><span class=\"soft\">every time.</span>",
+ bz_k:"Beyond the day job", bz_h:"Teaching, leading,<br><span class=\"soft\">and building my own thing.</span>",
+ sk_k:"Skills and tools", sk_h:"What I bring<br><span class=\"soft\">to the table.</span>",
+ tools_h:"Tools I use daily", lang_h:"Languages", edu_h:"Cambridge A-Levels",
+ edu_p:"Homeschooled, including IT and Computer Science. Learning on my own taught me discipline and how to own my progress.",
+ c_h:"Let’s connect<br><span class=\"soft\">the next dot.</span>", c_p:"Have a project, a role or an idea? Message me on WhatsApp or send an email, and I’ll reply personally.",
+ c_wa:"Message on WhatsApp", copy:"Copy email", copied:"Copied ✓",
+ foot:"© 2026 Maryam Zahid, Riyadh", totop:"Back to the top ↑",
+ wa_default:"Hi Maryam, I found your portfolio and I’d like to talk about a project.", wa_float:"Chat on WhatsApp"
+},
+ar:{
+ title:"مريم زاهد | مواقع وسير ذاتية وعروض تقديمية", name:"مريم زاهد", initials:"م ز", lang:"English", menu:"القائمة",
+ nav_about:"نبذة", nav_services:"الخدمات", nav_work:"أعمالي", nav_beyond:"خارج العمل", nav_skills:"المهارات", nav_hire:"اطلب خدمة",
+ d_home:"البداية", d_method:"من الفوضى إلى الترتيب", d_process:"طريقة عملي", d_contact:"تواصل",
+ hi:"مرحبًا، أنا مريم من الرياض", avail:"متاحة لمشاريع العمل الحر",
+ h1a:"أصل بين النقاط.", h1b:"ثم أحوّل الفكرة إلى واقع.",
+ why:"ما الذي أتى بك إلى هنا؟",
+ cta1:"اطّلع على خدماتي", cta2:"استكشف أعمالي",
+ hint:"حرّك المؤشر لتصل بين النقاط ✦", hintT:"المس أي مكان لإضافة نقاط ✦", hintDone:"ها هي، اتصلت ✦",
+ about_k:"نبذة عني", about_h:"تنظيم للتفاصيل.<br><span class=\"soft\">وخيال لكل ما سواها.</span>",
+ about_p1:"أعمل في الإدارة والعمليات، وأستمتع بأخذ المعلومات المبعثرة أو المعقدة وتحويلها إلى شيء منظم ومفهوم ومفيد.",
+ about_p2:"في الشركة الدولية للأغذية المتخصصة، أربط بين الأشخاص والمعلومات في المالية والمبيعات والعمليات وإدارة المطابخ والموارد البشرية والشركاء الخارجيين. وخارج هذا الدور، أقدّم خدمات العمل الحر مثل المواقع والسير الذاتية والعروض التقديمية، وأدرّس طلاب كامبريدج منذ 2019، وقدت فرق متطوعين في فعاليات عامة، وأبني استوديو إبداعيًا خاصًا بي اسمه Velris.",
+ about_p3:"أحب العمل الذي يحتاج إلى جانبي العقل معًا: تقرير إداري في الصباح، وموقع إلكتروني بعد الظهر.",
+ s_k:"اعمل معي", s_h:"تحتاج تصميمًا؟<br><span class=\"soft\">سأبنيه لك.</span>",
+ s_lead:"عمل واضح ومتقن للأفراد والمشاريع الصغيرة، بالعربية أو الإنجليزية. أضف ما تحتاجه إلى طلبك، ثم أرسله عبر واتساب أو البريد الإلكتروني.",
+ add:"أضف إلى طلبي", added:"تمت الإضافة ✓",
+ b_title:"جهّز طلبك", b_q1:"ما الذي تحتاجه؟", b_q2:"متى تحتاجه؟", b_name:"اسمك (اختياري)", b_note:"تفاصيل أخرى (اختياري)",
+ b_ph:"مثال: أنا مصمم جرافيك وأحتاج ملف أعمال بالعربية والإنجليزية.", b_prev:"رسالتك", b_wa:"أرسل عبر واتساب", b_mail:"أرسل بالبريد",
+ b_empty:"اختر خدمة واحدة على الأقل لتبدأ رسالتك.", b_ready:"سيفتح واتساب أو تطبيق البريد والرسالة جاهزة للإرسال.",
+ m_k:"ما أفعله فعلًا", m_h:"من ملاحظات مبعثرة<br><span class=\"soft\">إلى خطوة تالية واضحة.</span>",
+ m_lead:"هذا يوم اثنين معتاد: أسئلة متفرقة من خمس إدارات. اضغط الزر لترى كيف أحوّلها.",
+ org:"رتّبها", scatter:"بعثرها مجددًا", mf0:"سبعة أمور معلقة، بلا مسؤولين ولا مواعيد.", mf1:"البنود السبعة نفسها: لكل منها مسؤول وحالة وخطوة تالية.",
+ th1:"البند", th2:"المسؤول", th3:"الحالة", th4:"الخطوة التالية",
+ w_k:"أعمال مختارة", w_h:"مشاريع حقيقية.<br><span class=\"soft\">ودوري في كل منها.</span>",
+ w_lead:"اضغط على أي مشروع لترى هدفه ودوري فيه وما أنجزته ومرحلته. المفاهيم والمشاريع التجريبية موضحة.",
+ d_purpose:"الهدف", d_role:"دوري", d_made:"ما أنجزته أو نسّقته", d_tools:"الأدوات والأسلوب", d_output:"النتيجة",
+ prev:"المشروع السابق", next:"المشروع التالي", close:"إغلاق",
+ p_k:"طريقة عملي", p_h:"أربع خطوات،<br><span class=\"soft\">في كل مرة.</span>",
+ bz_k:"خارج العمل اليومي", bz_h:"أدرّس وأقود،<br><span class=\"soft\">وأبني مشروعي الخاص.</span>",
+ sk_k:"المهارات والأدوات", sk_h:"ما أضيفه<br><span class=\"soft\">إلى أي فريق.</span>",
+ tools_h:"أدوات أستخدمها يوميًا", lang_h:"اللغات", edu_h:"شهادة كامبريدج A-Levels",
+ edu_p:"تعليم منزلي شمل تقنية المعلومات وعلوم الحاسب. علّمني التعلم الذاتي الانضباط وتحمّل مسؤولية تقدّمي.",
+ c_h:"لنصل<br><span class=\"soft\">النقطة التالية.</span>", c_p:"لديك مشروع أو فرصة عمل أو فكرة؟ راسلني عبر واتساب أو البريد الإلكتروني، وسأرد عليك بنفسي.",
+ c_wa:"راسلني على واتساب", copy:"نسخ البريد", copied:"تم النسخ ✓",
+ foot:"© 2026 مريم زاهد، الرياض", totop:"العودة للأعلى ↑",
+ wa_default:"مرحبًا مريم، اطلعت على ملف أعمالك وأود التحدث عن مشروع.", wa_float:"تواصل عبر واتساب"
+}};
+
+const SUBS = {
+ all:{en:"Websites, portfolios, CVs, presentations and creative content, backed by real experience in business operations. I turn complex information into work people can understand, use and act on.",
+      ar:"مواقع إلكترونية وملفات أعمال وسير ذاتية وعروض تقديمية ومحتوى إبداعي، مدعومة بخبرة حقيقية في العمليات التجارية. أحوّل المعلومات المعقدة إلى عمل واضح يمكن فهمه واستخدامه والبناء عليه."},
+ hire:{en:"Need a website, portfolio, CV or presentation? Pick what you need below and send me a message. I’ll reply with a clear quote.",
+       ar:"تحتاج موقعًا أو ملف أعمال أو سيرة ذاتية أو عرضًا تقديميًا؟ اختر ما تحتاجه أدناه وأرسل لي رسالة، وسأرد عليك بعرض سعر واضح."},
+ ops:{en:"I keep cross-department work moving: trackers, follow-ups, SOPs and management updates that make the next step obvious.",
+      ar:"أحافظ على سير العمل بين الإدارات: متابعات وجداول مهام وإجراءات تشغيل وتقارير إدارية تجعل الخطوة التالية واضحة."},
+ creative:{en:"I shape ideas into websites, presentations, videos and brand concepts, using design tools and AI to move quickly.",
+      ar:"أحوّل الأفكار إلى مواقع وعروض تقديمية وفيديوهات ومفاهيم للعلامات التجارية، مستعينة بأدوات التصميم والذكاء الاصطناعي لإنجاز العمل بسرعة."}
+};
+const OPTS = [['hire',{en:"I want to hire you",ar:"أريد التعاقد معك"}],['ops',{en:"Business & operations",ar:"الأعمال والعمليات"}],['creative',{en:"Digital & creative",ar:"الرقمي والإبداعي"}],['all',{en:"A little of everything",ar:"قليل من كل شيء"}]];
+const NODES = {ops:{en:"Operations",ar:"العمليات"}, cv:{en:"CVs & portfolios",ar:"السير الذاتية"}, deck:{en:"Presentations",ar:"العروض التقديمية"}, web:{en:"Websites",ar:"المواقع"}, video:{en:"Video & AI",ar:"الفيديو والذكاء الاصطناعي"}, teach:{en:"Tutoring",ar:"التدريس"}};
+const NODE_AUD = {hire:['web','cv','deck','video'], ops:['ops','deck'], creative:['web','deck','video'], all:[]};
+
+const FACTS = [
+ ['var(--accent)',{en:"Admin Coordinator, ISFC",ar:"منسقة إدارية، الشركة الدولية للأغذية المتخصصة"},{en:"Strategy and operations transformation, October 2024 to present",ar:"التحول الاستراتيجي والتشغيلي، من أكتوبر 2024 حتى الآن"}],
+ ['var(--wa)',{en:"Freelance designer and builder",ar:"مصممة ومنفّذة مستقلة"},{en:"Websites, portfolios, CVs and presentations",ar:"مواقع وملفات أعمال وسير ذاتية وعروض تقديمية"}],
+ ['var(--blush)',{en:"Cambridge tutor since 2019",ar:"مدرّسة لمناهج كامبريدج منذ 2019"},{en:"IGCSE, O-Level and A-Level students",ar:"طلاب IGCSE وO-Level وA-Level"}],
+ ['var(--mint)',{en:"Event volunteer, 2022 to 2024",ar:"متطوعة في الفعاليات، 2022 إلى 2024"},{en:"Konoz Retaj conferences and public events",ar:"مؤتمرات وفعاليات كنوز رتاج"}],
+ ['var(--butter)',{en:"Founder, Velris",ar:"مؤسسة Velris"},{en:"Creative and marketing studio, in development",ar:"استوديو إبداعي وتسويقي، قيد التطوير"}],
+ ['var(--lilac)',{en:"English, Urdu and Arabic",ar:"الإنجليزية والأردية والعربية"},{en:"Fluent, fluent and basic",ar:"بطلاقة، بطلاقة، ومستوى أساسي"}]
+];
+
+/* ---------- Services ---------- */
+const IC = {
+ web:'<rect x="3" y="4" width="18" height="15" rx="2"/><path d="M3 8h18M7 12h6M7 15h4"/>',
+ cv:'<rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="9" r="2.5"/><path d="M8.5 15.5c.8-1.6 2-2.3 3.5-2.3s2.7.7 3.5 2.3M8 18.5h8"/>',
+ deck:'<rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/>',
+ brand:'<circle cx="8" cy="8" r="4"/><rect x="13" y="13" width="8" height="8" rx="1.5"/><path d="M14 4l6 6M4 14l6 6"/>',
+ video:'<rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/>',
+ docs:'<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>'
+};
+const FEAT = {key:'portfolio', badge:{en:"You’re looking at one",ar:"أنت تشاهد مثالًا الآن"}, t:{en:"Portfolio websites",ar:"مواقع ملفات الأعمال"},
+ d:{en:"An interactive personal website like this one, built around your story: for job seekers, freelancers, executives and creatives. Shared with one link.",ar:"موقع شخصي تفاعلي مثل هذا، مبني حول قصتك: للباحثين عن عمل والمستقلين والتنفيذيين والمبدعين، ويُشارك برابط واحد."},
+ inc:{en:["Custom design and animations","Writing your content with you","English and Arabic versions","Works on every phone","Help getting it online"],ar:["تصميم وحركات مخصصة","كتابة المحتوى معك","نسخة عربية وإنجليزية","يعمل على جميع الهواتف","المساعدة في نشره على الإنترنت"]},
+ mini:{en:["Your story,","in one link."],ar:["قصتك","في رابط واحد."]}};
+const SVC = [
+ {key:'web', c:'var(--lilac)', t:{en:"Business websites",ar:"مواقع للأعمال"}, d:{en:"Landing pages and simple sites for small businesses, restaurants and home businesses.",ar:"صفحات هبوط ومواقع بسيطة للمشاريع الصغيرة والمطاعم والأعمال المنزلية."}, x:{en:["Landing pages","Menus and QR pages","WhatsApp buttons"],ar:["صفحات هبوط","قوائم طعام وصفحات QR","أزرار واتساب"]}},
+ {key:'cv', c:'var(--mint)', t:{en:"CVs and cover letters",ar:"السير الذاتية وخطابات التقديم"}, d:{en:"A CV that reads well and looks sharp, written around the job you want.",ar:"سيرة ذاتية واضحة وأنيقة، مكتوبة حول الوظيفة التي تريدها."}, x:{en:["Recruiter-friendly CV","Designed CV","Cover letter"],ar:["سيرة متوافقة مع أنظمة التوظيف","سيرة ذاتية مصممة","خطاب تقديم"]}},
+ {key:'deck', c:'var(--butter)', t:{en:"Presentations and company profiles",ar:"العروض التقديمية وملفات الشركات"}, d:{en:"Decks and profiles that tell your story clearly to clients, investors or management.",ar:"عروض وملفات تروي قصتك بوضوح للعملاء أو المستثمرين أو الإدارة."}, x:{en:["Pitch decks","Company profiles","Business plans"],ar:["عروض للمستثمرين","ملفات تعريف الشركات","خطط العمل"]}},
+ {key:'brand', c:'var(--blush)', t:{en:"Branding and social media",ar:"الهوية والتواصل الاجتماعي"}, d:{en:"A consistent look across your posts, menus, cards and documents.",ar:"مظهر موحّد لمنشوراتك وقوائمك وبطاقاتك ومستنداتك."}, x:{en:["Brand direction","Social templates","Menus and flyers"],ar:["توجّه الهوية","قوالب التواصل الاجتماعي","قوائم ومنشورات مطبوعة"]}},
+ {key:'video', c:'var(--lilac)', t:{en:"AI video and content",ar:"فيديو ومحتوى بالذكاء الاصطناعي"}, d:{en:"Short promo videos and reels, from script to final cut, made with AI tools.",ar:"فيديوهات ترويجية قصيرة وريلز، من النص إلى النسخة النهائية، بأدوات الذكاء الاصطناعي."}, x:{en:["Scripts","Promo reels","Product videos"],ar:["كتابة النصوص","ريلز ترويجية","فيديوهات المنتجات"]}},
+ {key:'docs', c:'var(--mint)', t:{en:"Business documents and SOPs",ar:"مستندات الأعمال وإجراءات التشغيل"}, d:{en:"The paperwork that helps a small business run smoothly.",ar:"المستندات التي تساعد المشروع الصغير على العمل بسلاسة."}, x:{en:["SOPs and checklists","Job descriptions","Forms and templates"],ar:["إجراءات وقوائم تحقق","أوصاف وظيفية","نماذج وقوالب"]}}
+];
+const HOW = [
+ [{en:"Message me",ar:"راسلني"},{en:"Tell me what you need on WhatsApp or email.",ar:"أخبرني بما تحتاجه عبر واتساب أو البريد."}],
+ [{en:"Get a quote",ar:"استلم عرض السعر"},{en:"A clear price and timeline before anything starts.",ar:"سعر ومدة واضحان قبل البدء."}],
+ [{en:"Review as I build",ar:"راجع أثناء العمل"},{en:"You see drafts and tell me what to change.",ar:"ترى المسودات وتخبرني بما تريد تغييره."}],
+ [{en:"Launch",ar:"انطلق"},{en:"You get the final files or a live link.",ar:"تستلم الملفات النهائية أو رابطًا مباشرًا."}]
+];
+const WHEN = [{en:"Flexible",ar:"مرن"},{en:"Within a month",ar:"خلال شهر"},{en:"Within two weeks",ar:"خلال أسبوعين"},{en:"It’s urgent",ar:"مستعجل"}];
+const allSvc = () => [FEAT, ...SVC];
+
+function renderServices(){
+  const on = sel.has(FEAT.key);
+  $('#feat').innerHTML = `<div><span class="badge">✦ ${L(FEAT.badge)}</span><h3>${L(FEAT.t)}</h3><p>${L(FEAT.d)}</p>
+    <ul>${L(FEAT.inc).map(i=>`<li>${i}</li>`).join('')}</ul>
+    <button class="add" type="button" data-k="${FEAT.key}" aria-pressed="${on}">${on ? T[lang].added : T[lang].add}</button></div>
+    <div class="browser" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span class="url">https://<b id="typed"></b><span class="caret"></span></span></div>
+    <div class="page"><div class="mini-h">${L(FEAT.mini)[0]}</div><div class="mini-s">${L(FEAT.mini)[1]}</div>
+    <div class="blocks"><span style="--c:var(--blush)"></span><span style="--c:var(--mint)"></span><span style="--c:var(--butter)"></span></div>
+    <div class="line" style="width:80%"></div><div class="line" style="width:55%"></div></div></div>`;
+  $('#svcGrid').innerHTML = SVC.map((s,i) => { const o = sel.has(s.key); return `<article class="svc${o?' sel':''}" style="--c:${s.c}">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[s.key]}</svg></span>
+    <h3>${L(s.t)}</h3><p>${L(s.d)}</p><div class="chips">${L(s.x).map(c=>`<span class="chip">${c}</span>`).join('')}</div>
+    <button class="add" type="button" data-k="${s.key}" aria-pressed="${o}">${o ? T[lang].added : T[lang].add}</button></article>`; }).join('');
+  document.querySelectorAll('.add').forEach(b => b.onclick = () => toggleSvc(b.dataset.k));
+  $('#how').innerHTML = HOW.map(([h,p]) => `<div><b>${L(h)}</b><span>${L(p)}</span></div>`).join('');
+  renderBuilder();
+}
+function toggleSvc(k){ sel.has(k) ? sel.delete(k) : sel.add(k); renderServices(); observe(); }
+function renderBuilder(){
+  $('#bPick').innerHTML = allSvc().map(s => `<button type="button" data-k="${s.key}" aria-pressed="${sel.has(s.key)}">${L(s.t)}</button>`).join('');
+  $('#bPick').querySelectorAll('button').forEach(b => b.onclick = () => toggleSvc(b.dataset.k));
+  $('#bWhen').innerHTML = WHEN.map((w,i) => `<button type="button" role="radio" aria-checked="${i===when}" data-i="${i}">${L(w)}</button>`).join('');
+  $('#bWhen').querySelectorAll('button').forEach(b => b.onclick = () => { when = +b.dataset.i; renderBuilder(); });
+  $('#bNote').placeholder = T[lang].b_ph;
+  updateMsg();
+}
+function buildMsg(){
+  const list = allSvc().filter(s => sel.has(s.key)).map(s => L(s.t));
+  const name = $('#bName').value.trim(), note = $('#bNote').value.trim();
+  if (lang === 'ar'){
+    let m = `مرحبًا مريم، اطلعت على ملف أعمالك وأنا مهتم بـ: ${list.join('، ')}.\nالمدة: ${L(WHEN[when])}.`;
+    if (name) m += `\nالاسم: ${name}`; if (note) m += `\nتفاصيل: ${note}`; return m;
+  }
+  let m = `Hi Maryam, I found your portfolio and I’m interested in: ${list.join(', ')}.\nTimeline: ${L(WHEN[when])}.`;
+  if (name) m += `\nName: ${name}`; if (note) m += `\nDetails: ${note}`; return m;
+}
+function updateMsg(){
+  const has = sel.size > 0, msg = has ? buildMsg() : '';
+  $('#bubble').textContent = has ? msg : '…';
+  $('#bHint').textContent = has ? T[lang].b_ready : T[lang].b_empty;
+  const wa = $('#sendWa'), ml = $('#sendMail');
+  if (has){
+    wa.href = `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`; wa.removeAttribute('disabled'); wa.removeAttribute('aria-disabled');
+    ml.href = `mailto:${EMAIL}?subject=${encodeURIComponent(lang==='ar'?'طلب خدمة من ملف الأعمال':'Project request from your portfolio')}&body=${encodeURIComponent(msg)}`; ml.removeAttribute('disabled'); ml.removeAttribute('aria-disabled');
+  } else {
+    [wa, ml].forEach(a => { a.removeAttribute('href'); a.setAttribute('disabled',''); a.setAttribute('aria-disabled','true'); });
+  }
+}
+$('#bName').addEventListener('input', updateMsg); $('#bNote').addEventListener('input', updateMsg);
+
+/* typed domain in browser mock */
+const DOMAINS = ['yourname.com','sara.design','dr-ahmed.com','noura.studio','maryamzahid.com'];
+let di = 0, ci = 0, del = false;
+function typeLoop(){
+  const el = $('#typed'); if (!el){ setTimeout(typeLoop, 400); return; }
+  const w = DOMAINS[di];
+  if (reduce){ el.textContent = DOMAINS[0]; return; }
+  if (!del){ ci++; el.textContent = w.slice(0,ci); if (ci === w.length){ del = true; setTimeout(typeLoop, 1600); return; } }
+  else { ci--; el.textContent = w.slice(0,ci); if (ci === 0){ del = false; di = (di+1) % DOMAINS.length; } }
+  setTimeout(typeLoop, del ? 45 : 95);
+}
+
+/* ---------- Mess to order ---------- */
+const NOTES = [
+ {q:{en:"supplier docs still missing??",ar:"مستندات المورد ما زالت ناقصة؟؟"}, t:{en:"Supplier registration documents",ar:"مستندات تسجيل المورد"}, o:{en:"Procurement",ar:"المشتريات"}, s:[{en:"Pending",ar:"قيد الانتظار"},"p"], n:{en:"Chase the two missing certificates by Wednesday",ar:"متابعة الشهادتين الناقصتين قبل الأربعاء"}, c:'var(--butter)', x:'3%', y:'4%', r:'-5deg', mx:'1%', my:'1%'},
+ {q:{en:"who approves the quote?",ar:"من يعتمد عرض السعر؟"}, t:{en:"Client quotation",ar:"عرض سعر لعميل"}, o:{en:"Finance, then CEO",ar:"المالية ثم الرئيس التنفيذي"}, s:[{en:"Waiting approval",ar:"بانتظار الاعتماد"},"a"], n:{en:"Send costing summary for sign-off",ar:"إرسال ملخص التكلفة للاعتماد"}, c:'var(--blush)', x:'27%', y:'14%', r:'4deg', mx:'51%', my:'3%'},
+ {q:{en:"engineer lands Tuesday — hotel? pickup?",ar:"المهندس يصل الثلاثاء — الفندق؟ الاستقبال؟"}, t:{en:"Engineer visit",ar:"زيارة المهندس"}, o:{en:"Admin",ar:"الإدارة"}, s:[{en:"Scheduled",ar:"مجدول"},"s"], n:{en:"Confirm hotel and airport pickup",ar:"تأكيد الفندق والاستقبال من المطار"}, c:'var(--mint)', x:'52%', y:'3%', r:'-3deg', mx:'2%', my:'25%'},
+ {q:{en:"kitchen needs the final menu",ar:"المطبخ يحتاج القائمة النهائية"}, t:{en:"Final menu for kitchen",ar:"القائمة النهائية للمطبخ"}, o:{en:"Chef team",ar:"فريق الطهاة"}, s:[{en:"In progress",ar:"قيد التنفيذ"},"s"], n:{en:"Share approved menu and quantities",ar:"مشاركة القائمة المعتمدة والكميات"}, c:'var(--lilac)', x:'76%', y:'12%', r:'6deg', mx:'50%', my:'27%'},
+ {q:{en:"update for management by Thursday!",ar:"تقرير للإدارة يوم الخميس!"}, t:{en:"Weekly management update",ar:"التقرير الأسبوعي للإدارة"}, o:{en:"Admin",ar:"الإدارة"}, s:[{en:"Ready",ar:"جاهز"},"d"], n:{en:"Send consolidated summary Thursday 9 am",ar:"إرسال الملخص الموحد الخميس 9 صباحًا"}, c:'var(--butter)', x:'10%', y:'52%', r:'3deg', mx:'1%', my:'50%'},
+ {q:{en:"customs papers for the shipment",ar:"أوراق الجمارك للشحنة"}, t:{en:"Equipment shipment customs",ar:"تخليص شحنة المعدات"}, o:{en:"Logistics",ar:"اللوجستيات"}, s:[{en:"Pending",ar:"قيد الانتظار"},"p"], n:{en:"Forward invoice and packing list to broker",ar:"إرسال الفاتورة وقائمة التعبئة للمخلّص"}, c:'var(--mint)', x:'40%', y:'48%', r:'-6deg', mx:'51%', my:'52%'},
+ {q:{en:"SOP v2 — comments from finance?",ar:"مسودة الإجراءات 2 — ملاحظات المالية؟"}, t:{en:"SOP draft, version 2",ar:"مسودة الإجراءات، الإصدار 2"}, o:{en:"Finance",ar:"المالية"}, s:[{en:"Waiting approval",ar:"بانتظار الاعتماد"},"a"], n:{en:"Merge comments and reissue",ar:"دمج الملاحظات وإعادة الإصدار"}, c:'var(--blush)', x:'70%', y:'55%', r:'-2deg', mx:'24%', my:'75%'}
+];
+function renderNotes(){
+  $('#items').innerHTML = NOTES.map(n => `<div class="item" style="--x:${n.x}; --y:${n.y}; --rot:${n.r}; --mx:${n.mx}; --my:${n.my}; --c:${n.c}">
+    <span class="pin" aria-hidden="true"></span><span class="q">${L(n.q)}</span>
+    <span class="row"><span class="t">${L(n.t)}</span><span class="o">${L(n.o)}</span><span class="st ${n.s[1]}">${L(n.s[0])}</span><span class="n">${L(n.n)}</span></span></div>`).join('');
+  $('#board').classList.toggle('neat', neat);
+  $('#orgBtn').setAttribute('aria-pressed', neat);
+  $('#orgLbl').textContent = neat ? T[lang].scatter : T[lang].org;
+  $('#messFoot').textContent = neat ? T[lang].mf1 : T[lang].mf0;
+}
+$('#orgBtn').onclick = () => {
+  const items = [...document.querySelectorAll('.item')];
+  const first = items.map(el => el.getBoundingClientRect());
+  neat = !neat; $('#board').classList.toggle('neat', neat);
+  $('#orgBtn').setAttribute('aria-pressed', neat);
+  $('#orgLbl').textContent = neat ? T[lang].scatter : T[lang].org;
+  $('#messFoot').textContent = neat ? T[lang].mf1 : T[lang].mf0;
+  if (reduce) return;
+  const last = items.map(el => el.getBoundingClientRect());
+  items.forEach((el,i) => {
+    const dx = first[i].left - last[i].left, dy = first[i].top - last[i].top;
+    const sx = first[i].width / last[i].width, sy = first[i].height / last[i].height;
+    el.style.transition = 'none'; el.style.transformOrigin = 'top left';
+    el.style.transform = `translate(${dx}px,${dy}px) scale(${sx},${sy})`;
+  });
+  requestAnimationFrame(() => requestAnimationFrame(() => items.forEach((el,i) => {
+    el.style.transition = `transform .8s cubic-bezier(.2,.8,.2,1) ${i*45}ms`;
+    el.style.transform = '';
+    el.addEventListener('transitionend', () => { el.style.transition=''; el.style.transformOrigin=''; }, {once:true});
+  })));
+};
+
+/* ---------- Work ---------- */
+const COLORS = {ops:'var(--mint)', docs:'var(--butter)', creative:'var(--blush)', digital:'var(--lilac)'};
+const CATS = [['all',{en:"All",ar:"الكل"}],['ops',{en:"Operations",ar:"العمليات"}],['docs',{en:"Documentation",ar:"التوثيق"}],['digital',{en:"Digital",ar:"الرقمي"}],['creative',{en:"Creative",ar:"الإبداعي"}]];
+const STATUS = {ongoing:{en:"Ongoing",ar:"مستمر"}, concept:{en:"Concept",ar:"مفهوم"}, pilot:{en:"Pilot",ar:"تجريبي"}, postponed:{en:"Event postponed",ar:"تأجّل المعرض"}};
+const WORK = [
+ {cat:'digital', aud:['hire','creative'], st:'',
+  t:{en:"Executive and personal portfolio websites",ar:"مواقع ملفات أعمال تنفيذية وشخصية"}, one:{en:"Turning a career into a website people remember.",ar:"تحويل المسيرة المهنية إلى موقع لا يُنسى."},
+  purpose:{en:"Professionals need more than a PDF CV to stand out: a link that shows who they are and what they’ve done.",ar:"يحتاج المهنيون إلى أكثر من سيرة ذاتية بصيغة PDF ليتميزوا: رابط يعرض من هم وما أنجزوه."},
+  role:{en:"I plan the story, write and organize the content, choose the visual direction and build the site with AI-assisted development.",ar:"أخطط للقصة وأكتب المحتوى وأنظّمه وأختار الاتجاه البصري وأبني الموقع بمساعدة أدوات الذكاء الاصطناعي."},
+  made:{en:["A bilingual executive portfolio for a company CEO","This interactive personal portfolio","Interactive timelines, filters and animations"],ar:["ملف أعمال تنفيذي ثنائي اللغة لرئيس تنفيذي","ملف الأعمال الشخصي التفاعلي هذا","خطوط زمنية وفلاتر وحركات تفاعلية"]},
+  tools:{en:"Content planning, design direction, AI-assisted web development",ar:"تخطيط المحتوى، والتوجيه التصميمي، وتطوير الويب بمساعدة الذكاء الاصطناعي"},
+  output:{en:"Shareable portfolio websites in English and Arabic.",ar:"مواقع ملفات أعمال قابلة للمشاركة بالعربية والإنجليزية."}},
+ {cat:'ops', aud:['ops'], st:'ongoing',
+  t:{en:"Management reporting and action tracking",ar:"التقارير الإدارية ومتابعة المهام"}, one:{en:"Making ongoing work easier to follow.",ar:"جعل العمل الجاري أسهل في المتابعة."},
+  purpose:{en:"Management needed one clear view of progress, pending matters and items needing attention across departments.",ar:"احتاجت الإدارة إلى رؤية واحدة واضحة للتقدم والأمور المعلقة والبنود التي تتطلب الاهتمام في جميع الإدارات."},
+  role:{en:"I collect departmental inputs, organize the information, check the details and keep follow-up records current.",ar:"أجمع مدخلات الإدارات وأنظّم المعلومات وأتحقق من التفاصيل وأحدّث سجلات المتابعة."},
+  made:{en:["Consolidated management updates","Meeting records and minutes","Action trackers with owners and next steps"],ar:["تقارير إدارية موحدة","سجلات ومحاضر الاجتماعات","جداول متابعة بمسؤولين وخطوات تالية"]},
+  tools:{en:"Excel, Word, Outlook",ar:"Excel وWord وOutlook"}, output:{en:"Regular updates and trackers used in management reviews.",ar:"تقارير وجداول متابعة منتظمة تُستخدم في المراجعات الإدارية."}},
+ {cat:'docs', aud:['ops','hire'], st:'ongoing',
+  t:{en:"SOPs, job descriptions and approval workflows",ar:"إجراءات التشغيل والأوصاف الوظيفية ومسارات الاعتماد"}, one:{en:"Turning recurring tasks into clear procedures.",ar:"تحويل المهام المتكررة إلى إجراءات واضحة."},
+  purpose:{en:"Recurring work depended on people remembering steps; responsibilities and approvals weren’t written down.",ar:"كان العمل المتكرر يعتمد على تذكّر الأشخاص للخطوات، ولم تكن المسؤوليات والاعتمادات مكتوبة."},
+  role:{en:"I learn how each operation works, then structure the process, document responsibilities and fold in management feedback.",ar:"أتعرّف على طريقة عمل كل قسم، ثم أنظّم العملية وأوثّق المسؤوليات وأدمج ملاحظات الإدارة."},
+  made:{en:["Department-specific SOPs and manuals","Job descriptions and role profiles","Quotation workflow from sales to finance review to management approval","Forms, checklists and templates"],ar:["أدلة إجراءات خاصة بكل قسم","أوصاف وظيفية","مسار عرض السعر من المبيعات إلى مراجعة المالية فاعتماد الإدارة","نماذج وقوائم تحقق وقوالب"]},
+  tools:{en:"Word, Excel, Canva",ar:"Word وExcel وCanva"}, output:{en:"Usable procedure drafts, forms and templates in company format.",ar:"مسودات إجراءات ونماذج وقوالب جاهزة للاستخدام بصيغة الشركة."}},
+ {cat:'digital', aud:['ops','creative'], st:'concept',
+  t:{en:"Command Center dashboard concepts",ar:"مفاهيم لوحات مركز القيادة"}, one:{en:"Designing what management should see at a glance.",ar:"تصميم ما يجب أن تراه الإدارة بنظرة واحدة."},
+  purpose:{en:"Teams needed better visibility into day-to-day operations in one place.",ar:"احتاجت الفرق إلى رؤية أوضح للعمليات اليومية في مكان واحد."},
+  role:{en:"I identified reporting needs for customer service, marketing and kitchen operations, organized the information and developed layout concepts.",ar:"حددت احتياجات التقارير لخدمة العملاء والتسويق وعمليات المطبخ، ونظّمت المعلومات وطوّرت مفاهيم التصميم."},
+  made:{en:["Reporting structures per department","Dashboard layout concepts","Requirements for the development team"],ar:["هيكل تقارير لكل قسم","مفاهيم تصميم اللوحات","متطلبات لفريق التطوير"]},
+  tools:{en:"Requirements gathering, layout sketching, AI-assisted concepting",ar:"جمع المتطلبات، ورسم التصاميم الأولية، والذكاء الاصطناعي"}, output:{en:"Dashboard concepts and requirements handed to development.",ar:"مفاهيم لوحات ومتطلبات سُلّمت لفريق التطوير."}},
+ {cat:'digital', aud:['creative','hire'], st:'pilot',
+  t:{en:"Hospital meal-ordering portal",ar:"بوابة طلب الوجبات للمستشفى"}, one:{en:"Connecting the customer journey with kitchen needs.",ar:"ربط رحلة العميل باحتياجات المطبخ."},
+  purpose:{en:"Hospital staff needed a simple way to order meals, while the kitchen needed clean order records to prepare from.",ar:"احتاج موظفو المستشفى إلى طريقة بسيطة لطلب الوجبات، واحتاج المطبخ إلى سجلات طلبات واضحة للتحضير."},
+  role:{en:"I defined content and workflow requirements, thought through order records and preparation needs, and coordinated revisions.",ar:"حددت متطلبات المحتوى وسير العمل، وراعيت سجلات الطلبات واحتياجات التحضير، ونسّقت التعديلات."},
+  made:{en:["Meal selection and subscription flow","Payment receipt submission step","Collection information and order records"],ar:["اختيار الوجبات والاشتراكات","خطوة إرفاق إيصال الدفع","معلومات الاستلام وسجلات الطلبات"]},
+  tools:{en:"Digital planning, AI-assisted build, stakeholder reviews",ar:"التخطيط الرقمي، والبناء بمساعدة الذكاء الاصطناعي، والمراجعة مع المعنيين"}, output:{en:"A working pilot portal.",ar:"بوابة تجريبية تعمل."}},
+ {cat:'digital', aud:['creative','hire'], st:'',
+  t:{en:"QR nutrition information pages",ar:"صفحات المعلومات الغذائية عبر QR"}, one:{en:"Making meal information easy to reach.",ar:"تسهيل الوصول إلى معلومات الوجبات."},
+  purpose:{en:"Diners needed nutrition details for meals without crowding printed materials.",ar:"احتاج المستفيدون إلى تفاصيل القيم الغذائية للوجبات دون ازدحام المطبوعات."},
+  role:{en:"I organized the supplied meal data, prepared page content and kept digital pages and printed materials in sync.",ar:"نظّمت بيانات الوجبات وأعددت محتوى الصفحات وحافظت على تطابق الصفحات الرقمية والمطبوعات."},
+  made:{en:["QR-linked meal information pages","Printed materials with matching QR codes"],ar:["صفحات معلومات للوجبات مرتبطة برموز QR","مطبوعات برموز QR مطابقة"]},
+  tools:{en:"Web pages, QR codes, Canva",ar:"صفحات ويب ورموز QR وCanva"}, output:{en:"Scannable nutrition pages for meals.",ar:"صفحات غذائية تُفتح بمسح الرمز."}},
+ {cat:'ops', aud:['ops'], st:'ongoing',
+  t:{en:"National Catering project coordination",ar:"تنسيق مشروع التموين الوطني"}, one:{en:"Keeping a multi-party project moving.",ar:"الحفاظ على تقدم مشروع متعدد الأطراف."},
+  purpose:{en:"A frozen meals program involved internal departments, commercial partners and equipment suppliers, all depending on each other.",ar:"شمل برنامج الوجبات المجمدة إدارات داخلية وشركاء تجاريين وموردي معدات، وكلٌّ منهم يعتمد على الآخر."},
+  role:{en:"I connected the stakeholders, tracked requirements and communicated next steps.",ar:"ربطت بين الأطراف المعنية وتابعت المتطلبات وأبلغت الخطوات التالية."},
+  made:{en:["Shipment, collection and customs follow-up","Engineer travel and installation planning","Supplier correspondence and readiness updates"],ar:["متابعة الشحن والاستلام والتخليص الجمركي","تخطيط سفر المهندسين والتركيب","مراسلات الموردين وتحديثات الجاهزية"]},
+  tools:{en:"Trackers, email, coordination calls",ar:"جداول المتابعة والبريد الإلكتروني والاتصالات التنسيقية"}, output:{en:"Clear follow-up records and next steps for every party.",ar:"سجلات متابعة وخطوات تالية واضحة لكل طرف."}},
+ {cat:'ops', aud:['ops'], st:'ongoing',
+  t:{en:"Technical supplier coordination",ar:"التنسيق الفني مع الموردين"}, one:{en:"Translating technical questions into clear asks.",ar:"تحويل الأسئلة الفنية إلى طلبات واضحة."},
+  purpose:{en:"A proposed nitrogen tank installation needed drawings, placement requirements and structural questions answered.",ar:"تطلّب تركيب خزان نيتروجين مقترح مخططات ومتطلبات للموقع وإجابات عن أسئلة إنشائية."},
+  role:{en:"I gathered documents, prepared correspondence and followed up with the supplier.",ar:"جمعت المستندات وأعددت المراسلات وتابعت مع المورد."},
+  made:{en:["Organized drawings and specifications","Questions on placement and structure","Supplier follow-up records"],ar:["تنظيم المخططات والمواصفات","أسئلة حول الموقع والهيكل","سجلات متابعة المورد"]},
+  tools:{en:"Email, document management",ar:"البريد الإلكتروني وإدارة المستندات"}, output:{en:"A complete set of requirements and supplier answers.",ar:"مجموعة متكاملة من المتطلبات وإجابات المورد."}},
+ {cat:'ops', aud:['ops','creative'], st:'postponed',
+  t:{en:"Global Health Exhibition 2026",ar:"معرض الصحة العالمي 2026"}, one:{en:"Preparing healthcare catering for a big stage.",ar:"التحضير لعرض حلول التموين الصحي على منصة كبرى."},
+  purpose:{en:"The company planned to exhibit its hospital food solutions at the Global Health Exhibition.",ar:"خططت الشركة لعرض حلولها الغذائية للمستشفيات في معرض الصحة العالمي."},
+  role:{en:"I supported planning: booth-space discussions, contractor and design coordination, and presentation of the company’s capabilities.",ar:"دعمت التخطيط: مناقشات مساحة الجناح، والتنسيق مع المقاول والمصمم، وعرض قدرات الشركة."},
+  made:{en:["Booth-space planning","Contractor and design coordination","Capability presentation materials"],ar:["تخطيط مساحة الجناح","التنسيق مع المقاول والمصمم","مواد عرض قدرات الشركة"]},
+  tools:{en:"Coordination, Canva, PowerPoint",ar:"التنسيق وCanva وPowerPoint"}, output:{en:"Planning and materials were in place when the exhibition was postponed.",ar:"كان التخطيط والمواد جاهزين عند تأجيل المعرض."}},
+ {cat:'creative', aud:['creative','hire'], st:'',
+  t:{en:"HPLIA Central Kitchen video",ar:"فيديو المطبخ المركزي HPLIA"}, one:{en:"Turning a kitchen into a story.",ar:"تحويل المطبخ إلى قصة."},
+  purpose:{en:"Show a central kitchen operation in a way an outside audience can follow.",ar:"عرض عمليات مطبخ مركزي بطريقة يسهل على الجمهور الخارجي متابعتها."},
+  role:{en:"I scripted and directed the video, sequencing scenes into a clear visual story.",ar:"كتبت نص الفيديو وأخرجته، ورتّبت المشاهد في قصة بصرية واضحة."},
+  made:{en:["Script","Scene sequence and shot list","Production direction and feedback"],ar:["النص","تسلسل المشاهد وقائمة اللقطات","التوجيه والملاحظات أثناء الإنتاج"]},
+  tools:{en:"Scriptwriting, creative direction",ar:"كتابة النصوص والإخراج الإبداعي"}, output:{en:"A central kitchen video.",ar:"فيديو للمطبخ المركزي."}},
+ {cat:'creative', aud:['creative','hire'], st:'',
+  t:{en:"ISFC corporate video",ar:"الفيلم التعريفي للشركة"}, one:{en:"A cinematic picture of the whole company.",ar:"صورة سينمائية للشركة كاملة."},
+  purpose:{en:"Present the company’s facilities, kitchens, people and fleet in one brand film.",ar:"عرض مرافق الشركة ومطابخها وموظفيها وأسطولها في فيلم واحد للعلامة."},
+  role:{en:"I contributed concepts, planned scenes and gave visual revisions for brand consistency.",ar:"شاركت في المفاهيم وخطّطت المشاهد وقدّمت ملاحظات بصرية للحفاظ على هوية العلامة."},
+  made:{en:["Scene concepts","Visual revision notes","Brand consistency review"],ar:["مفاهيم المشاهد","ملاحظات التعديل البصري","مراجعة اتساق الهوية"]},
+  tools:{en:"Runway, AI-assisted video",ar:"Runway والفيديو بالذكاء الاصطناعي"}, output:{en:"Corporate film concepts and revisions.",ar:"مفاهيم وتعديلات الفيلم التعريفي."}},
+ {cat:'creative', aud:['creative','hire'], st:'concept',
+  t:{en:"Diet World presentations and campaigns",ar:"عروض وحملات دايت ورلد"}, one:{en:"Positioning a healthy food brand.",ar:"تموضع علامة للأكل الصحي."},
+  purpose:{en:"Diet World needed to present its services to hospitals and the public.",ar:"احتاجت دايت ورلد إلى عرض خدماتها للمستشفيات والجمهور."},
+  role:{en:"I built a hospital presentation and AI-generated campaign videos, and explored how to present services across subscriptions, catering, cloud kitchens, hospitals and schools.",ar:"أعددت عرضًا تقديميًا للمستشفيات وفيديوهات حملات بالذكاء الاصطناعي، واستكشفت طريقة عرض الخدمات عبر الاشتراكات والتموين والمطابخ السحابية والمستشفيات والمدارس."},
+  made:{en:["Hospital presentation","AI-generated campaign videos","Service structure concept"],ar:["عرض تقديمي للمستشفيات","فيديوهات حملات بالذكاء الاصطناعي","مفهوم لهيكل الخدمات"]},
+  tools:{en:"Canva, PowerPoint, AI video tools",ar:"Canva وPowerPoint وأدوات الفيديو بالذكاء الاصطناعي"}, output:{en:"Presentation and campaign videos; the service structure is a concept.",ar:"عرض تقديمي وفيديوهات حملات؛ وهيكل الخدمات ما زال مفهومًا."}},
+ {cat:'creative', aud:['creative','hire'], st:'ongoing',
+  t:{en:"Business presentations and company profiles",ar:"العروض التقديمية وملفات الشركات"}, one:{en:"Giving business ideas a clear visual story.",ar:"منح أفكار الأعمال قصة بصرية واضحة."},
+  purpose:{en:"Leaders needed company profiles, plans and executive materials that read clearly and look polished.",ar:"احتاج القادة إلى ملفات شركات وخطط ومواد تنفيذية واضحة ومتقنة."},
+  role:{en:"I structure the narrative, organize the business information and design visuals and supporting assets.",ar:"أبني السرد وأنظّم معلومات الأعمال وأصمم المرئيات والمواد الداعمة."},
+  made:{en:["Company profiles","Executive presentations","Menus and branded documents"],ar:["ملفات تعريف الشركات","عروض تنفيذية","قوائم طعام ومستندات بهوية العلامة"]},
+  tools:{en:"Canva, PowerPoint, AI-assisted tools",ar:"Canva وPowerPoint وأدوات الذكاء الاصطناعي"}, output:{en:"Presentation-ready decks and profiles.",ar:"عروض وملفات تعريف جاهزة للعرض."}}
+];
+const statusTag = w => !w.st ? '' : `<span class="tag ${w.st==='concept'?'concept':w.st==='pilot'?'pilot':w.st==='postponed'?'paused':''}">${L(STATUS[w.st])}</span>`;
+const catName = k => L(CATS.find(c => c[0]===k)[1]);
+function renderFilters(){
+  $('#filters').setAttribute('aria-label', lang==='ar' ? 'تصفية المشاريع' : 'Filter projects');
+  $('#filters').innerHTML = CATS.map(([k,l]) => { const n = k==='all' ? WORK.length : WORK.filter(w => w.cat===k).length;
+    return `<button type="button" data-f="${k}" aria-pressed="${k===filter}">${L(l)}<span class="n">${n}</span></button>`; }).join('');
+  $('#filters').querySelectorAll('button').forEach(b => b.onclick = () => { filter = b.dataset.f; renderFilters(); renderCards(); });
+}
+function order(){ const idx = WORK.map((w,i) => i); if (audience==='all') return idx;
+  return idx.sort((a,b) => (WORK[b].aud.includes(audience)) - (WORK[a].aud.includes(audience)) || a-b); }
+function renderCards(){
+  $('#cards').innerHTML = order().map(i => { const w = WORK[i];
+    const hide = filter!=='all' && w.cat!==filter, match = audience!=='all' && w.aud.includes(audience);
+    return `<button class="card${match?' match':''}" type="button" data-i="${i}" style="--c:${COLORS[w.cat]}" ${hide?'hidden':''}>
+      <span class="blob" aria-hidden="true"></span>
+      <span class="top-row"><span class="num">${String(i+1).padStart(2,'0')}</span>${statusTag(w)}</span>
+      <h3>${L(w.t)}</h3><p>${L(w.one)}</p>
+      <span class="bottom"><span class="chip" style="font-size:13px; padding:4px 11px">${catName(w.cat)}</span>
+      <span class="open" aria-hidden="true"><svg class="flip" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></span></button>`; }).join('');
+  $('#cards').querySelectorAll('.card').forEach(c => c.onclick = () => openWork(+c.dataset.i));
+  const lines = {ops:{en:"Showing business and operations work first.",ar:"عرض أعمال العمليات أولًا."}, creative:{en:"Showing digital and creative work first.",ar:"عرض الأعمال الرقمية والإبداعية أولًا."}, hire:{en:"Showing websites and creative work first.",ar:"عرض المواقع والأعمال الإبداعية أولًا."}};
+  $('#forLine').textContent = audience==='all' ? '' : L(lines[audience]);
+}
+const dlg = $('#dlg');
+const visibleIds = () => order().filter(i => filter==='all' || WORK[i].cat===filter);
+function fillDialog(){
+  const w = WORK[current], d = T[lang];
+  $('#dTags').innerHTML = `<span class="chip">${catName(w.cat)}</span>${statusTag(w)}`;
+  $('#dTitle').textContent = L(w.t); $('#dOne').textContent = L(w.one);
+  $('#dBody').innerHTML = `<dt>${d.d_purpose}</dt><dd>${L(w.purpose)}</dd><dt>${d.d_role}</dt><dd>${L(w.role)}</dd>
+    <dt>${d.d_made}</dt><dd><ul>${L(w.made).map(m=>`<li>${m}</li>`).join('')}</ul></dd>
+    <dt>${d.d_tools}</dt><dd>${L(w.tools)}</dd><dt>${d.d_output}</dt><dd>${L(w.output)}</dd>`;
+  $('#dPrev').textContent = d.prev; $('#dNext').textContent = d.next; $('#dClose').setAttribute('aria-label', d.close);
+}
+function openWork(i){ current = i; fillDialog(); if (!dlg.open) dlg.showModal(); dlg.querySelector('.dlg').scrollTop = 0; }
+function stepWork(s){ const v = visibleIds(); const p = v.indexOf(current); openWork(v[(p + s + v.length) % v.length]); }
+$('#dClose').onclick = () => dlg.close(); $('#dPrev').onclick = () => stepWork(-1); $('#dNext').onclick = () => stepWork(1);
+dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+
+/* ---------- Process ---------- */
+const STEPS = [
+ [{en:"Understand the purpose",ar:"أفهم الهدف"},{en:"What needs to happen, who needs the information and what a useful result looks like.",ar:"ما الذي يجب أن يحدث، ومن يحتاج المعلومات، وكيف تبدو النتيجة المفيدة."},{en:"“Who reads this, and what do they decide?”",ar:"«من سيقرأ هذا، وما القرار الذي سيتخذه؟»"}],
+ [{en:"Organize the details",ar:"أنظّم التفاصيل"},{en:"Bring the information together, spot the gaps and give the work a clear structure.",ar:"أجمع المعلومات وأحدد الفجوات وأمنح العمل هيكلًا واضحًا."},{en:"“What’s missing, and who has it?”",ar:"«ما الناقص، ومن لديه؟»"}],
+ [{en:"Build something practical",ar:"أبني شيئًا عمليًا"},{en:"A report, process, presentation or website that people can understand and use.",ar:"تقرير أو إجراء أو عرض أو موقع يفهمه الناس ويستخدمونه."},{en:"“Can someone new follow this?”",ar:"«هل يستطيع شخص جديد اتباع هذا؟»"}],
+ [{en:"Refine and follow through",ar:"أراجع وأتابع"},{en:"Check the details, take in feedback and keep the next steps visible until it’s done.",ar:"أتحقق من التفاصيل وأستقبل الملاحظات وأبقي الخطوات التالية واضحة حتى الإنجاز."},{en:"“Who’s doing what, by when?”",ar:"«من يفعل ماذا، ومتى؟»"}]
+];
+function renderSteps(){
+  const inn = $('#steps').classList.contains('in');
+  $('#steps').innerHTML = '<div class="line" aria-hidden="true"><i></i></div>' + STEPS.map(([h,p,e],i) => `<div class="step"><div class="dot">${i+1}</div><h3>${L(h)}</h3><p>${L(p)}</p><div class="eg">${L(e)}</div></div>`).join('');
+  if (inn) $('#steps').classList.add('in');
+}
+
+/* ---------- Beyond ---------- */
+const li = a => a.map(x => `<li>${x}</li>`).join(''), ch = a => a.map(x => `<span class="chip">${x}</span>`).join('');
+const BEYOND = [
+ {k:{en:"Tutoring",ar:"التدريس"}, html:() => lang==='ar' ? `<div class="pcard hero-c" style="--c:var(--lilac)"><span class="meta">من 2019 حتى الآن · خصوصي وعبر الإنترنت</span><h3>مدرّسة مناهج كامبريدج</h3><p>أساعد طلاب IGCSE وO-Level وA-Level على فهم المواضيع الصعبة والاستعداد للامتحانات وتنظيم دراستهم، بما يناسب طريقة تعلم كل طالب.</p><span class="big" aria-hidden="true">Aa</span></div>
+   <div class="pcard"><h4>المواد</h4><div class="chips" style="margin-bottom:24px">${ch(["تقنية المعلومات","علوم الحاسب","اللغة الإنجليزية","الرياضيات","العلوم","إدارة الأعمال"])}</div><h4>طريقتي في التدريس</h4><ul>${li(["أشرح المفاهيم الصعبة بلغة بسيطة","أضع خطط دراسة وروتين مراجعة","أهيّئ الطلاب لأجواء الامتحان","أعزز الثقة والتفكير المستقل"])}</ul></div>`
+  : `<div class="pcard hero-c" style="--c:var(--lilac)"><span class="meta">2019 to present · private and online</span><h3>Cambridge tutor</h3><p>I help IGCSE, O-Level and A-Level students understand difficult topics, prepare for exams and organize their studies, adapting to how each student learns.</p><span class="big" aria-hidden="true">Aa</span></div>
+   <div class="pcard"><h4>Subjects</h4><div class="chips" style="margin-bottom:24px">${ch(["IT","Computer Science","English","Mathematics","Science","Business"])}</div><h4>How I teach</h4><ul>${li(["Explain hard concepts in plain language","Build study plans and revision routines","Prepare students for exam conditions","Encourage confidence and independent thinking"])}</ul></div>`},
+ {k:{en:"Volunteering",ar:"التطوع"}, html:() => lang==='ar' ? `<div class="pcard hero-c" style="--c:var(--mint)"><span class="meta">كنوز رتاج · 2022 إلى 2024</span><h3>التواصل والتوعية ودعم الفعاليات</h3><p>دعمت المؤتمرات والفعاليات العامة، ودُعيت مرة بعد مرة لقيادة فرق المتطوعين وتدريبها.</p><span class="big" aria-hidden="true">✦</span></div>
+   <div class="pcard"><h4>ما قمت به</h4><ul>${li(["توجيه المتطوعين وتوزيع المهام وتدريب الفرق","استقبال الضيوف والمشاركين وإرشادهم","إدارة التسجيل والتواصل مع الحضور","دعم الجدولة واللوجستيات والتوعية","مساعدة الفرق على التكيّف مع تغيّر الخطط"])}</ul></div>`
+  : `<div class="pcard hero-c" style="--c:var(--mint)"><span class="meta">Konoz Retaj · 2022 to 2024</span><h3>Communications, outreach and event support</h3><p>I supported conferences and public events, and was invited back event after event to lead and train volunteer teams.</p><span class="big" aria-hidden="true">✦</span></div>
+   <div class="pcard"><h4>What I did</h4><ul>${li(["Briefed volunteers, allocated tasks and trained teams","Welcomed and guided guests and participants","Ran registration and attendee communication","Supported scheduling, logistics and outreach","Helped teams adapt when plans changed on the day"])}</ul></div>`},
+ {k:{en:"Velris",ar:"Velris"}, html:() => lang==='ar' ? `<div class="pcard hero-c" style="--c:var(--butter)"><span class="meta">استوديو إبداعي وتسويقي خاص بي · قيد التطوير</span><h3>Velris</h3><p>أبني Velris من الصفر: توجّه الهوية والشعار، وملف الشركة، وخطة العمل، ومحتوى الموقع، وهيكل الخدمات، وسير العمل من أول استفسار حتى التسليم.</p><span class="big" aria-hidden="true">V</span></div>
+   <div class="pcard"><h4>كيف تُقدَّم الخدمات</h4><div class="split"><div><h4>بقيادتي</h4><ul>${li(["الهوية والتواصل البصري","استراتيجية التسويق والحملات","محتوى التواصل الاجتماعي","مواقع ملفات الأعمال وصفحات الهبوط","الإنتاج الإبداعي بالذكاء الاصطناعي"])}</ul></div><div><h4>مع شركاء <small>(متخصصون)</small></h4><ul>${li(["التصوير الفوتوغرافي والفيديو","تغطية الفعاليات","المونتاج وما بعد الإنتاج","المواقع المتقدمة وتحسين محركات البحث","الأتمتة والبرمجيات المخصصة"])}</ul></div></div></div>`
+  : `<div class="pcard hero-c" style="--c:var(--butter)"><span class="meta">My creative and marketing studio · in development</span><h3>Velris</h3><p>I’m building Velris from the ground up: brand direction and logo, company profile, business plan, website content, service structure and the workflow from first enquiry to delivery.</p><span class="big" aria-hidden="true">V</span></div>
+   <div class="pcard"><h4>How the services are delivered</h4><div class="split"><div><h4>Led by me</h4><ul>${li(["Branding and visual communication","Marketing strategy and campaigns","Social media content","Portfolio sites and landing pages","AI-assisted creative production"])}</ul></div><div><h4>With partners <small>(specialists)</small></h4><ul>${li(["Photography and videography","Event coverage","Editing and post-production","Advanced websites and SEO","Automation and custom software"])}</ul></div></div></div>`},
+ {k:{en:"Her Next Chapter",ar:"Her Next Chapter"}, html:() => lang==='ar' ? `<div class="pcard hero-c" style="--c:var(--blush)"><span class="meta">مبادرة تعليمية · قيد التطوير</span><h3>Her Next Chapter</h3><p>مبادرة لمساعدة النساء والفتيات على بناء مهارات أكاديمية ورقمية وإبداعية ومهنية عملية، تجمع بين خبرتي في التدريس وما أستخدمه في عملي يوميًا.</p><span class="big" aria-hidden="true">←</span></div>
+   <div class="pcard"><h4>مجالات التعلم المخطط لها</h4><div class="chips">${ch(["أساسيات الحاسب والمهارات الرقمية","Microsoft Office","التواصل المهني","المهارات الإدارية","إعداد السيرة الذاتية والمقابلات","الجاهزية لسوق العمل","Canva والعروض التقديمية","أدوات الذكاء الاصطناعي العملية","الإنجليزية والدعم الأكاديمي"])}</div></div>`
+  : `<div class="pcard hero-c" style="--c:var(--blush)"><span class="meta">Learning initiative · in development</span><h3>Her Next Chapter</h3><p>An initiative to help women and girls build practical academic, digital, creative and workplace skills, combining my tutoring experience with what I use at work every day.</p><span class="big" aria-hidden="true">→</span></div>
+   <div class="pcard"><h4>Planned learning areas</h4><div class="chips">${ch(["Computer and digital basics","Microsoft Office","Professional communication","Administrative skills","CV and interview prep","Workplace readiness","Canva and presentations","Practical AI tools","English and academic support"])}</div></div>`}
+];
+function renderBeyond(){
+  $('#btabs').setAttribute('aria-label', T[lang].nav_beyond);
+  $('#btabs').innerHTML = BEYOND.map((b,i) => `<button type="button" role="tab" id="bt${i}" aria-selected="${i===btab}" aria-controls="bpanel" tabindex="${i===btab?0:-1}">${L(b.k)}</button>`).join('');
+  $('#btabs').querySelectorAll('button').forEach((b,i) => b.onclick = () => { btab = i; renderBeyond(); $('#bt'+i).focus(); });
+  $('#bpanel').setAttribute('aria-labelledby','bt'+btab);
+  $('#bpanel').innerHTML = `<div class="panel">${BEYOND[btab].html()}</div>`;
+}
+$('#btabs').addEventListener('keydown', e => {
+  const f = lang==='ar' ? 'ArrowLeft' : 'ArrowRight', b = lang==='ar' ? 'ArrowRight' : 'ArrowLeft';
+  if (e.key===f){ btab=(btab+1)%BEYOND.length; renderBeyond(); $('#bt'+btab).focus(); }
+  if (e.key===b){ btab=(btab-1+BEYOND.length)%BEYOND.length; renderBeyond(); $('#bt'+btab).focus(); }
+});
+
+/* ---------- Skills ---------- */
+const GROUPS = [
+ [{en:'Administration and coordination',ar:'الإدارة والتنسيق'},'var(--mint)','ops',{en:["Executive support","Cross-department communication","Action tracking","Scheduling and logistics","Supplier coordination","Event support"],ar:["الدعم التنفيذي","التواصل بين الإدارات","متابعة المهام","الجدولة واللوجستيات","التنسيق مع الموردين","دعم الفعاليات"]}],
+ [{en:'Writing and documentation',ar:'الكتابة والتوثيق'},'var(--butter)','ops',{en:["Professional correspondence","SOPs and manuals","Job descriptions","CVs and company profiles","Website copy","Video scripts"],ar:["المراسلات المهنية","أدلة الإجراءات","الأوصاف الوظيفية","السير الذاتية وملفات الشركات","محتوى المواقع","نصوص الفيديو"]}],
+ [{en:'Operations and process',ar:'العمليات والإجراءات'},'var(--lilac)','ops',{en:["Workflow and tracker design","Spotting missing inputs","Mapping responsibilities","Project readiness follow-up"],ar:["تصميم سير العمل وجداول المتابعة","تحديد المدخلات الناقصة","توزيع المسؤوليات","متابعة جاهزية المشاريع"]}],
+ [{en:'Creative and marketing',ar:'الإبداع والتسويق'},'var(--blush)','creative',{en:["Website design","Presentation design","Branding concepts","Campaign concepts","Menus and promo materials","Creative direction","AI visuals and video"],ar:["تصميم المواقع","تصميم العروض التقديمية","مفاهيم الهوية","مفاهيم الحملات","القوائم والمواد الترويجية","الإخراج الإبداعي","المرئيات والفيديو بالذكاء الاصطناعي"]}],
+ [{en:'Teaching and people',ar:'التدريس والعمل مع الناس'},'var(--accentSoft)','all',{en:["Simplifying complex ideas","Personalized learning","Volunteer leadership","Team coordination","Adaptability"],ar:["تبسيط الأفكار المعقدة","التعلم المخصص","قيادة المتطوعين","تنسيق الفرق","المرونة"]}]
+];
+const TOOLS = [["Canva",{en:"Decks, branded documents, visuals",ar:"العروض والمستندات والمرئيات"}],["PowerPoint",{en:"Business presentations",ar:"العروض التجارية"}],["Word",{en:"Documents, templates, reports",ar:"المستندات والقوالب والتقارير"}],["Excel",{en:"Trackers and organizing information",ar:"جداول المتابعة وتنظيم المعلومات"}],["Runway",{en:"AI-assisted video",ar:"الفيديو بالذكاء الاصطناعي"}],["ChatGPT & Claude",{en:"Research, drafting, ideas, website builds",ar:"البحث والصياغة والأفكار وبناء المواقع"}]];
+const LANGS = [[{en:"English",ar:"الإنجليزية"},5],[{en:"Urdu",ar:"الأردية"},5],[{en:"Arabic",ar:"العربية"},2]];
+function renderSkills(){
+  $('#groups').innerHTML = GROUPS.map(([h,c,a,list]) => `<div class="group${audience!=='all'&&(a===audience||(audience==='hire'&&a==='creative'))?' match':''}" data-aud="${a}" style="--c:${c}"><h3><i></i>${L(h)}</h3><div class="chips">${L(list).map(s=>`<span class="chip">${s}</span>`).join('')}</div></div>`).join('');
+  $('#toolList').innerHTML = TOOLS.map(([n,d]) => `<div class="tool"><b dir="ltr">${n}</b><span>${L(d)}</span></div>`).join('');
+  $('#langList').innerHTML = LANGS.map(([n,v]) => `<div class="lang"><b>${L(n)}</b><span class="meter" role="img" aria-label="${v===5?(lang==='ar'?'بطلاقة':'Fluent'):(lang==='ar'?'أساسي':'Basic')}">${[1,2,3,4,5].map(k=>`<i class="${k<=v?'f':''}"></i>`).join('')}</span></div>`).join('');
+}
+
+/* ---------- Audience ---------- */
+function renderOpts(){
+  $('#opts').innerHTML = OPTS.map(([k,l]) => `<button type="button" role="radio" data-aud="${k}" aria-checked="${k===audience}" tabindex="${k===audience?0:-1}">${L(l)}</button>`).join('');
+  $('#opts').querySelectorAll('button').forEach(b => b.onclick = () => setAudience(b.dataset.aud, true));
+}
+$('#opts').addEventListener('keydown', e => {
+  const keys = OPTS.map(o => o[0]), i = keys.indexOf(audience);
+  const fwd = lang==='ar' ? ['ArrowLeft','ArrowDown'] : ['ArrowRight','ArrowDown'], back = lang==='ar' ? ['ArrowRight','ArrowUp'] : ['ArrowLeft','ArrowUp'];
+  let n = -1; if (fwd.includes(e.key)) n = (i+1)%keys.length; if (back.includes(e.key)) n = (i-1+keys.length)%keys.length;
+  if (n > -1){ e.preventDefault(); setAudience(keys[n], true); $(`#opts [data-aud="${keys[n]}"]`).focus(); }
+});
+function setAudience(a, user){
+  audience = a; renderOpts();
+  const sub = $('#sub');
+  if (user && !reduce){ sub.classList.add('swap'); setTimeout(() => { sub.textContent = L(SUBS[a]); sub.classList.remove('swap'); }, 300); }
+  else sub.textContent = L(SUBS[a]);
+  document.querySelectorAll('.node').forEach(n => n.classList.toggle('hot', NODE_AUD[a].includes(n.dataset.n)));
+  renderCards(); renderSkills();
+}
+
+/* ---------- Full render ---------- */
+function render(){
+  const d = T[lang], h = document.documentElement;
+  h.lang = lang; h.dir = lang==='ar' ? 'rtl' : 'ltr'; document.title = d.title;
+  document.querySelectorAll('[data-t]').forEach(el => el.textContent = d[el.dataset.t]);
+  document.querySelectorAll('[data-th]').forEach(el => el.innerHTML = d[el.dataset.th]);
+  $('#langBtn').textContent = d.lang; $('#langBtn').lang = lang==='en' ? 'ar' : 'en';
+  $('#menuBtn').setAttribute('aria-label', d.menu);
+  const w1 = d.h1a.split(' '), w2 = d.h1b.split(' ');
+  $('#h1').setAttribute('aria-label', d.h1a + ' ' + d.h1b);
+  $('#h1').innerHTML = w1.map((w,i) => `<span class="w" aria-hidden="true" style="transition-delay:${i*90}ms">${w}</span>`).join(' ') +
+    '<span class="l2" aria-hidden="true">' + w2.map((w,i) => `<span class="w" style="transition-delay:${400+i*70}ms">${w}</span>`).join(' ') + '</span>';
+  document.querySelectorAll('.node').forEach(n => n.textContent = L(NODES[n.dataset.n]));
+  $('#hint').textContent = coarse ? d.hintT : d.hint;
+  $('#facts').innerHTML = FACTS.map(([c,b,s]) => `<div class="fact"><i style="background:${c}"></i><div><b>${L(b)}</b><span>${L(s)}</span></div></div>`).join('');
+  const waDef = `https://wa.me/${PHONE}?text=${encodeURIComponent(d.wa_default)}`;
+  $('#waFloat').href = waDef; $('#waFloat').setAttribute('aria-label', d.wa_float); $('#cWa').href = waDef;
+  renderServices(); renderNotes(); renderFilters(); renderSteps(); renderBeyond(); setAudience(audience, false);
+  if (dlg.open) fillDialog();
+  observe();
+}
+$('#langBtn').onclick = () => {
+  lang = lang==='en' ? 'ar' : 'en';
+  try { localStorage.setItem('mz-lang', lang); } catch(e){}
+  render(); document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
+};
+
+/* ---------- Copy email ---------- */
+$('#copyBtn').onclick = async () => {
+  const b = $('#copyBtn');
+  try { await navigator.clipboard.writeText(EMAIL); b.textContent = T[lang].copied; } catch(e){ b.textContent = EMAIL; }
+  setTimeout(() => b.textContent = T[lang].copy, 1800);
+};
+
+/* ---------- Dot field ---------- */
+function field(canvas, opts){
+  const ctx = canvas.getContext('2d'); let W, H, dots = [], ptr = {x:-999, y:-999, on:false}, run = true, raf;
+  const host = canvas.parentElement;
+  const colors = () => { const cs = getComputedStyle(canvas); return {a: cs.getPropertyValue('--accent').trim() || '#4A45D4', i: cs.getPropertyValue(opts.ink || '--ink').trim() || '#1D1A33'}; };
+  let C = colors();
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { C = colors(); if (reduce) draw(); });
+  function size(){
+    const dpr = Math.min(devicePixelRatio || 1, 2), r = canvas.getBoundingClientRect();
+    W = r.width; H = r.height; canvas.width = W*dpr; canvas.height = H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n = Math.round(Math.min(opts.max, (W*H) / opts.density));
+    dots = Array.from({length:n}, () => ({x:Math.random()*W, y:Math.random()*H, vx:(Math.random()-.5)*.28, vy:(Math.random()-.5)*.28, r:1.2+Math.random()*1.8}));
+  }
+  function rgba(hex, a){ const h = hex.replace('#',''); const v = h.length===3 ? h.split('').map(c=>c+c).join('') : h; const n = parseInt(v,16); return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`; }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const link = opts.link, pl = opts.ptrLink;
+    for (const d of dots){
+      if (!reduce){ d.x += d.vx; d.y += d.vy; if (d.x<0||d.x>W) d.vx*=-1; if (d.y<0||d.y>H) d.vy*=-1; }
+      if (ptr.on){ const dx = ptr.x-d.x, dy = ptr.y-d.y, dist = Math.hypot(dx,dy); if (dist < pl){ d.x += dx*.006; d.y += dy*.006; } }
+    }
+    for (let i=0;i<dots.length;i++){ const a = dots[i];
+      for (let j=i+1;j<dots.length;j++){ const b = dots[j], dist = Math.hypot(a.x-b.x, a.y-b.y);
+        if (dist < link){ ctx.strokeStyle = rgba(C.i, (1-dist/link)*opts.lineA); ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke(); } }
+      if (ptr.on){ const dist = Math.hypot(a.x-ptr.x, a.y-ptr.y); if (dist < pl){ ctx.strokeStyle = rgba(C.a, (1-dist/pl)*.9); ctx.lineWidth = 1.3; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(ptr.x,ptr.y); ctx.stroke(); } }
+    }
+    for (const d of dots){ const near = ptr.on && Math.hypot(d.x-ptr.x, d.y-ptr.y) < pl;
+      ctx.fillStyle = near ? C.a : rgba(C.i, opts.dotA); ctx.beginPath(); ctx.arc(d.x,d.y, near ? d.r+1.2 : d.r, 0, Math.PI*2); ctx.fill(); }
+    if (opts.nodes){
+      const cr = canvas.getBoundingClientRect();
+      const pts = [...document.querySelectorAll('.node')].filter(n => n.offsetParent).map(n => { const r = n.getBoundingClientRect(); return {x:r.left+r.width/2-cr.left, y:r.top+r.height/2-cr.top, hot:n.classList.contains('hot')}; });
+      ctx.setLineDash([4,6]);
+      for (let i=0;i<pts.length-1;i++){ const a = pts[i], b = pts[i+1], hot = a.hot && b.hot; ctx.strokeStyle = rgba(hot ? C.a : C.i, hot ? .8 : .25); ctx.lineWidth = 1.4; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke(); }
+      ctx.setLineDash([]);
+      if (ptr.on) pts.forEach(p => { const dd = Math.hypot(p.x-ptr.x, p.y-ptr.y); if (dd < 260){ ctx.strokeStyle = rgba(C.a, (1-dd/260)*.8); ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(ptr.x,ptr.y); ctx.stroke(); } });
+    }
+  }
+  function loop(){ if (!run) return; draw(); raf = requestAnimationFrame(loop); }
+  host.addEventListener('pointermove', e => { const r = canvas.getBoundingClientRect(); ptr = {x:e.clientX-r.left, y:e.clientY-r.top, on:true}; if (reduce) draw(); });
+  host.addEventListener('pointerleave', () => { ptr.on = false; if (reduce) draw(); });
+  host.addEventListener('pointerdown', e => {
+    if (e.target.closest('a,button')) return;
+    const r = canvas.getBoundingClientRect(), x = e.clientX-r.left, y = e.clientY-r.top;
+    for (let k=0;k<6;k++){ const ang = Math.random()*Math.PI*2; dots.push({x, y, vx:Math.cos(ang)*.9, vy:Math.sin(ang)*.9, r:1.5+Math.random()*1.6}); }
+    if (dots.length > opts.max + 60) dots.splice(0, dots.length - opts.max - 60);
+    ptr = {x, y, on:true}; if (reduce) draw();
+    if (opts.hint) $('#hint').textContent = T[lang].hintDone;
+  });
+  addEventListener('resize', () => { size(); if (reduce) draw(); });
+  new IntersectionObserver(es => { run = es[0].isIntersecting; if (run && !reduce){ cancelAnimationFrame(raf); loop(); } }).observe(canvas);
+  size(); reduce ? draw() : loop();
+}
+
+/* ---------- Reveals, header, dot nav ---------- */
+let io;
+function observe(){
+  if (io) io.disconnect();
+  io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+  document.querySelectorAll('.rv:not(.in), #steps:not(.in)').forEach(el => io.observe(el));
+}
+const hdr = $('#hdr'), dlinks = [...document.querySelectorAll('#dotnav a')], nlinks = [...document.querySelectorAll('#nav a')];
+const secs = dlinks.map(a => document.querySelector(a.getAttribute('href')));
+let tick = false;
+function onScroll(){
+  hdr.classList.toggle('solid', scrollY > 30);
+  let cur = 0; secs.forEach((s,i) => { if (s.getBoundingClientRect().top < innerHeight*.45) cur = i; });
+  dlinks.forEach((a,i) => a.classList.toggle('on', i===cur));
+  const f = dlinks[0].querySelector('i').getBoundingClientRect(), t = dlinks[cur].querySelector('i').getBoundingClientRect();
+  $('#dfill').style.height = Math.max(0, t.top - f.top) + 'px';
+  const id = secs[cur].id; nlinks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#'+id));
+  const ct = $('#contact').getBoundingClientRect().top, rq = $('#request').getBoundingClientRect();
+  $('#waFloat').classList.toggle('hide', ct < innerHeight*.8 || (rq.top < innerHeight*.7 && rq.bottom > innerHeight*.3));
+  tick = false;
+}
+addEventListener('scroll', () => { if (!tick){ tick = true; requestAnimationFrame(onScroll); } }, {passive:true});
+const menuBtn = $('#menuBtn'), nav = $('#nav');
+menuBtn.onclick = () => { const o = nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', o); };
+nav.addEventListener('click', e => { if (e.target.closest('a')){ nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); } });
+
+render(); onScroll(); typeLoop();
+field($('#field'), {max:90, density:14000, link:120, ptrLink:170, lineA:.16, dotA:.35, nodes:true, hint:true});
+field($('#mini'), {max:45, density:16000, link:110, ptrLink:150, lineA:.25, dotA:.5, ink:'--bg'});
+requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add('loaded')));
+</script>
+
+
+</body></html>
